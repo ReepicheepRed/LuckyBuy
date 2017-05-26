@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/gap_25_s"
+        android:paddingBottom="@dimen/gap_25_s"
+        android:layout_alignParentBottom="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_tag_iv"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/payment_successful_iconicon" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/result_tag_iv"
+            android:layout_toEndOf="@+id/result_tag_iv"
+            android:paddingLeft="@dimen/gap_10_s" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_result_success"
+                android:id="@+id/result_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/gap_18_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wait_result_unveil"
+                android:id="@+id/result_subtitle"
+                android:paddingTop="@dimen/gap_10_s"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/text_6_c" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

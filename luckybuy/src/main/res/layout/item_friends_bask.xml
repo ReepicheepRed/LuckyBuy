@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/gap_17_dp"
+    android:paddingBottom="@dimen/gap_17_dp"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s"
+    android:background="@android:color/white">
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_bask"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_35_dp"
+        android:id="@+id/discover_communicate_rl">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/discover_zan_ll"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="@dimen/gap_13_s"
+                android:layout_height="@dimen/gap_13_s"
+                android:id="@+id/discover_zan_iv"
+                android:background="@drawable/background_zan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="126"
+                android:id="@+id/discover_zn_tv"
+                android:paddingLeft="@dimen/gap_5_s"
+                android:paddingRight="@dimen/gap_5_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/discover_try_ll">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Im_feeling"
+                android:id="@+id/textView16"
+                android:textColor="@color/light_red"
+                android:textSize="@dimen/text_12_s"
+                android:paddingRight="@dimen/gap_5_s" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView18"
+                android:src="@mipmap/shishishouqi_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:id="@+id/textView17"
+                android:paddingLeft="@dimen/gap_5_s"
+                android:visibility="invisible" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView32"
+                android:src="@mipmap/comment_icon"
+                android:paddingLeft="@dimen/gap_15_s"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friends_comment"
+        android:id="@+id/textView24"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_6_c"
+        android:visibility="gone" />
+
+</LinearLayout>

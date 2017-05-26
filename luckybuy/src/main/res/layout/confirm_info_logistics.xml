@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:background="@android:color/white"
+    android:id="@+id/confirm_info_logistics_ll">
+
+    <TextView
+        android:text="@string/logisticsInfo_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView46"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s"
+        android:paddingTop="@dimen/gap_15_s"
+        android:paddingBottom="@dimen/gap_15_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_85_dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/wuliuxinxi_icon"
+            android:id="@+id/imageView8"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/gap_15_s" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logistics_award_name"
+                android:text="                            "
+                android:textSize="@dimen/text_14_s"
+                android:textColor="@color/text_3_c" />
+
+            <TextView
+                android:text="@string/logistics_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logistics_company_tv"
+                android:layout_marginTop="@dimen/gap_10_s"
+                android:layout_marginBottom="@dimen/gap_10_s"
+                android:textColor="@color/text_9_c"
+                android:textSize="@dimen/text_12_s" />
+
+            <TextView
+                android:text="@string/express_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/express_number_tv"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/text_9_c" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

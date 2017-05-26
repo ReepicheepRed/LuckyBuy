@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ground_c"
+    android:id="@+id/cart_commodity_rl"
+    tools:context="com.luckybuy.MainActivity">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_award_Lv"
+        android:dividerHeight="@dimen/gap_10_s"
+        android:divider="@color/ground_c"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:layout_marginBottom="@dimen/field_height_primary_s" />
+
+    <RelativeLayout
+        android:id="@+id/cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"/>
+
+        <Button
+            android:layout_width="@dimen/view_100_s"
+            android:layout_height="match_parent"
+            android:text="@string/settlement"
+            android:id="@+id/settlement_btn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/jiesuan_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_amount"
+            android:id="@+id/cart_amount_tv"
+            android:layout_toLeftOf="@+id/settlement_btn"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/gap_11_s"
+            android:paddingRight="@dimen/gap_15_s"
+            android:textSize="@dimen/text_16_s"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_amount_text"
+            android:id="@+id/textView19"
+            android:layout_toLeftOf="@+id/cart_amount_tv"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_16_s" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="@dimen/gap_10_s"
+        android:visibility="gone"
+        android:id="@+id/cart_delete_rl"
+        android:background="@android:color/white"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/delete"
+            android:id="@+id/delete_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/delete_btn"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/text_16_s" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_all_select_ll"
+            android:paddingLeft="@dimen/gap_10_s"
+            android:paddingRight="@dimen/gap_10_s">
+
+            <CheckBox
+                android:layout_width="@dimen/cart_cb_s"
+                android:layout_height="@dimen/cart_cb_s"
+                android:id="@+id/cart_all_select"
+                android:checked="false"
+                android:button="@null"
+                android:background="@drawable/background_cart_checkbox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_selected"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_14_s"
+                android:id="@+id/textView43"
+                android:paddingLeft="@dimen/gap_9_s" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

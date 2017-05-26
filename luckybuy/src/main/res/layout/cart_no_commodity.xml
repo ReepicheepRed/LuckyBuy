@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/cart_no_commodity_ll"
+    android:paddingTop="@dimen/view_65_s">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView20"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/no_goods_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_no_commodity"
+        android:id="@+id/textView21"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/gap_25_s"
+        android:textSize="@dimen/text_14_s"
+        android:textColor="@color/text_3_c"
+        android:paddingBottom="@dimen/gap_20_s" />
+
+    <Button
+        android:layout_width="@dimen/view_110_s"
+        android:layout_height="@dimen/view_39_s"
+        android:text="@string/explore"
+        android:id="@+id/cart_explore_btn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_15_s"
+        android:background="@mipmap/casually_stroll_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_50_s"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:background="@color/ground_c"
+        android:layout_marginTop="@dimen/view_65_s">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/view_d0_c"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/like_ll" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/view_d0_c"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/like_ll" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/gap_10_s"
+            android:paddingRight="@dimen/gap_10_s"
+            android:id="@+id/like_ll"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView21"
+                android:src="@mipmap/cainixihuang_icon"
+                android:paddingRight="@dimen/gap_5_s"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guess_you"
+                android:id="@+id/textView22"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.luckybuy.layout.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_170_dp"
+        android:id="@+id/cart_recommend_Lv"
+        android:dividerHeight="@dimen/gap_10_s"
+        android:divider="@color/ground_c"
+        android:paddingBottom="@dimen/gap_15_s"
+        android:background="@color/ground_c" />
+</LinearLayout>

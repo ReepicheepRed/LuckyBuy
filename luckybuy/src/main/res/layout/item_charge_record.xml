@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="@dimen/view_49_s"
+android:layout_gravity="center_horizontal"
+android:gravity="center_vertical">
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:text="@string/history_time"
+    android:id="@+id/charge_time_tv"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textColor="@color/text_3_c"
+    android:textSize="@dimen/text_12_s"
+    android:lineSpacingExtra="@dimen/gap_7_s"
+    android:maxLines="2"
+    android:paddingLeft="@dimen/view_30_s"
+    android:paddingRight="@dimen/view_30_s" />
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:text="@string/charge_money"
+    android:id="@+id/charge_money_tv"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textSize="@dimen/text_12_s"
+    android:textColor="@color/light_red" />
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:text="@string/charge_certificating"
+    android:id="@+id/charge_state_tv"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textColor="@color/text_3_c"
+    android:textSize="@dimen/text_12_s" />
+</LinearLayout>

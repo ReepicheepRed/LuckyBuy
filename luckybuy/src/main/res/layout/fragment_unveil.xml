@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/navigation_bar_height_s"
+    android:background="@color/ground_c">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        android:id="@+id/textView23"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/nav_unveil"
+        android:textColor="@color/text_8f_c_"
+        android:background="@color/bg_f9_c"
+        android:textSize="@dimen/title_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/unveil_lv"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="@dimen/divider_h_s"
+        android:divider="@color/divider_c" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_fail" />
+</LinearLayout>

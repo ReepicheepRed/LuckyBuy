@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/navigation_bar_height_s"
+    android:orientation="vertical"
+    android:background="@color/ground_c">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/nav_friends"
+        android:id="@+id/title_cart"
+        android:gravity="center"
+        android:textSize="@dimen/title_s"
+        android:textColor="@color/text_8f_c_"
+        android:background="@color/bg_f9_c" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/nav_friends"
+            android:id="@+id/friends_tv"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/discover"
+            android:id="@+id/discover_tv"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_3_s"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="@dimen/gap_10_s">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friends_selected_iv"
+            android:src="@mipmap/articleswitch_selected"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover_selected_iv"
+            android:src="@mipmap/articleswitch_selected"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/friends_fl"/>
+
+<!--    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friends_list"
+        android:layout_gravity="center_horizontal" />-->
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.luckybuy.MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/field_height_primary_s"
+    android:gravity="center_vertical"
+    android:id="@+id/double_btn_ll">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/Now_Participate_2"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@color/light_red"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_16_s"
+        android:id="@+id/participate_btn" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_add_list_btn"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@mipmap/detail_jiaruqingdan_btn"
+        android:textColor="@android:color/white"
+        android:text="@string/add_list"
+        android:textSize="@dimen/text_16_s"
+        android:visibility="gone" />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:id="@+id/single_btn_ll"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/latest_issue_going"
+            android:id="@+id/textView32"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/gap_10_s" />
+
+        <Button
+            android:layout_width="@dimen/view_121_dp"
+            android:layout_height="match_parent"
+            android:text="@string/go_latest_issue_2"
+            android:background="@color/light_red"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16_s"
+            android:gravity="center"
+            android:id="@+id/go_latest_issue_btn" />
+    </LinearLayout>
+</LinearLayout>

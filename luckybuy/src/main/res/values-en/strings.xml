@@ -1,0 +1,444 @@
+<resources>
+    <string name="app_name">LuckyBuy</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="facebook_app_id">1837215296500425</string>
+
+    <string-array name="nav_name">
+        <item>Home</item>
+        <item>Upcoming</item>
+        <item>Friends</item>
+        <item>Cart</item>
+        <item>Me</item>
+    </string-array>
+    <string-array name="fsns_record">
+        <item>Buy record</item>
+        <item>Lucky record</item>
+        <item>Share record</item>
+    </string-array>
+    <string-array name="buy_record">
+        <item>All</item>
+        <item>Upcoming</item>
+        <item>History</item>
+    </string-array>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_unveil">Upcoming</string>
+    <string name="nav_friends">Friends</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_mine">Me</string>
+
+    
+    <string name="title_home">Lucky Buy</string>
+    <string name="title_login">Sign in</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_sns">Profile</string>
+    <string name="title_address_manager">Manager Address</string>
+    <string name="title_address_edit">Add new address</string>
+    <string name="title_bask_evaluate">Comments</string>
+    <string name="title_confirm_info">Validation</string>
+    <string name="title_pay_result">Pay Result</string>
+    <string name="title_payment">Payment</string>
+
+
+    <string name="tabs_home_hot">Hot</string>
+    <string name="tabs_home_friends">Friends Like</string>
+    <string name="tabs_home_latest">Latest</string>
+    <string name="account_hint">Enter phone number</string>
+    <string name="password_hint">Enter password</string>
+    <string name="forget_pwd">Forgot?</string>
+    <string name="facebook">Facebook</string>
+    <string name="no_account">no account,</string>
+    <string name="title_register">Sign up</string>
+    <string name="verify_code">Code</string>
+    <string name="verify_code_hint">Enter code</string>
+    <string name="agree_treaty" >Accept</string>
+    <string name="award_name">Apple iphone6s64G 颜色随机</string>
+    <string name="add_list">Cart</string>
+    <string name="total_demand">Total:%1$d</string>
+    <string name="surplus">Left:%1$d</string>
+    <string name="friends_login_fb">Login Facebook</string>
+    <string name="friends_no"> Invite Friends </string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="friends_unfold">Open</string>
+    <string name="friends_fold">Collapse</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_search">Search</string>
+
+    <string name="history_search">Recent</string>
+    <string name="hot_search">Hot</string>
+
+    <string name="commodity_detail">Product detail</string>
+    <string name="issue">Round:%1$d</string>
+    <string name="buyNumber">Total:%1$d</string>
+    <string name="seize_number">Number:</string>
+    <string name="edit">Edit</string>
+    <string name="finish">Done</string>
+    <string name="settlement">Pay</string>
+    <string name="cart_amount">฿%1$d</string>
+    <string name="cart_amount_text">Sub Total:</string>
+    <string name="cart_surplus">Total:%1$d  Left:%2$d</string>
+    <string name="participate_number">count</string>
+    <string name="cart_no_commodity">Your cart is empty</string>
+    <string name="explore">Participate now</string>
+    <string name="guess_you">Guess You Like</string>
+    <string name="all_selected">Select all</string>
+    <string name="delete">Delete</string>
+
+  <string name="check_amount_text">amount %1$d ，total：฿%2$.2f</string>
+
+    <string name="countDownTimer">00:00:00</string>
+    <string name="detail_with_picture">Detail</string>
+    <string name="detail_with_history_unveil">History</string>
+    <string name="detail_with_share">Share Order</string>
+    <string name="history_user_participate">Participate List</string>
+    <string name="history_start">%1$s start</string>
+    <string name="history_username">站住你别动</string>
+    <string name="history_userIp">( IP:26.12.34.21)</string>
+    <string name="history_time">2016&#8211;04&#8211;13 12:38:54</string>
+    <string name="history_userPartCount">Purchased %1$d</string>
+    <string name="Now_Participate">Buy Now</string>
+    <string name="no_participate">You are not participate,have a try</string>
+    <string name="caculate_detail">Calculation</string>
+    <string name="detail_countdown">Countdown:%1$s</string>
+    <string name="winner">Winners:%1$s</string>
+    <string name="detail_unveil_userId">User ID:%1$d</string>
+    <string name="detail_unveil_part_count">Purchased:%1$d</string>
+    <string name="detail_unveil_time">Date:%1$s</string>
+    <string name="lucky_number">Number:%1$d</string>
+    <string name="go_latest_issue">go to the Latest</string>
+    <string name="determine">OK</string>
+    <string name="buy_count">times</string>
+    <string name="messenger">Messenger</string>
+    <string name="twitter">Twitter</string>
+    <string name="copy">Copy</string>
+
+    <string name="purchase_history">My Participations</string>
+    <string name="prize_history">Lucky Record</string>
+    <string name="sun_share">Share order get diamonds</string>
+    <string name="get_diamond">My diamonds</string>
+    <string name="recharge_history">Recharge records</string>
+    <string name="call_center">Help &amp; Support</string>
+
+    <string name="recharge">Recharge</string>
+    <string name="click_login">Click Login</string>
+    <string name="balance">Balance</string>
+    <string name="detail_surplus">Left:%1$d</string>
+    <string name="friends_id">ID: %1$d</string>
+    <string name="robbing_award">Hot selling &#8230;</string>
+    <string name="bask_time">%1$1s</string>
+    <string name="friends_mood">
+        白马饰金羁，连翩西北驰。借问谁家子，幽并游侠儿。
+        少小去乡邑，扬声沙漠垂。宿昔秉良弓，楛矢何参差。
+        控弦破左的，右发摧月支。仰手接飞猱，俯身散马蹄。
+        狡捷过猴猿，勇剽若豹螭。边城多警急，虏骑数迁移。
+        羽檄从北来，厉马登高堤。长驱蹈匈奴，左顾凌鲜卑。
+        弃身锋刃端，性命安可怀？父母且不顾，何言子与妻！
+        名编壮士籍，不得中顾私。捐躯赴国难，视死忽如归！
+    </string>
+    <string name="Im_feeling">Have a try</string>
+    <string name="friends_comment">真的很萌:很幸运</string>
+    <string name="check_detail"> >View Details </string>
+    <string name="gobuy">Buy</string>
+    <string name="friends_winner">Winner:%1$s</string>
+    <string name="count_friends">Count:%1$d</string>
+    <string name="buy">Buy</string>
+    <string name="discover">Share</string>
+    <string name="exit">Sign Out</string>
+
+    <string name="setting_notify">Notifications</string>
+    <string name="setting_issue">Support</string>
+    <string name="setting_clear">Clear cache</string>
+    <string name="setting_version">Version</string>
+    <string name="version">LuckyBuy V%1$s</string>
+
+    <string name="sns_avatar">Avatar</string>
+    <string name="sns_id">ID</string>
+    <string name="sns_account">Account</string>
+    <string name="sns_nickname">Nickname</string>
+    <string name="sns_phone">Mobile</string>
+    <string name="sns_address">Address</string>
+    <string name="sns_id_value">00000000</string>
+    <string name="sns_account_value">chouyunyao@Gmail.com</string>
+    <string name="sns_nickname_value">Events</string>
+    <string name="facebook_bind_state">Binded</string>
+    <string name="add_new_address">Add new address</string>
+    <string name="address_user_name">张三</string>
+    <string name="user_address">浙江省 杭州市 西湖区文一西路雅仕苑</string>
+    <string name="phone_number">18012562728</string>
+    <string name="set_default_address">Set Default</string>
+
+    <string name="address_hint_name">Receiver Name</string>
+    <string name="address_hint_phone">Phone Number</string>
+    <string name="address_hint_district">City and District</string>
+    <string name="address_hint_street">Street</string>
+    <string name="address_hint_detail">Detail address</string>
+
+    <string name="charge_time">Date</string>
+    <string name="charge_figure">Count</string>
+    <string name="charge_state">Result</string>
+    <string name="charge_success">Success</string>
+    <string name="charge_fail">Fail</string>
+    <string name="charge_certificating">authentication&#8230;</string>
+    <string name="charge_money">100 baht</string>
+    <string name="confirm_address">Confirm delivery address</string>
+    <string name="deal_success">Transaction  success</string>
+    <string name="wait_shipments">Waiting for distribution &#8230;</string>
+    <string name="confirm">Confirm</string>
+    <string name="user_other">Other</string>
+    <string name="commodity_state">Product state</string>
+    <string name="obtain_commodity">Get Product</string>
+    <string name="commodity_info">Product Detail</string>
+    <string name="confirm_receipt">Confirm receipt</string>
+    <string name="commodity_distribute">Product distribution</string>
+    <string name="bask">Share Order</string>
+    <string name="bask_now">Share Order Now</string>
+    <string name="bask_look">View share</string>
+    <string name="bask_tip">Get diamonds free by share order</string>
+    <string name="bask_rule">Rules</string>
+    <string name="bask_evaluate_tip">at least 30 characters</string>
+    <string name="commit_evaluate">Submit comments</string>
+    <string name="add_picture">Add photo</string>
+    <string name="commit">Submit </string>
+    <string name="commit_indent">Submit order</string>
+
+    <!-- Pay Result Activity-->
+    <string name="pay_result_success">Pay success</string>
+    <string name="pay_result_fail">Pay fail</string>
+    <string name="wait_result_unveil">Waiting for result</string>
+    <string name="money_will_back">The money will be returned to your account balance</string>
+    <string name="snatch_record">My Orders</string>
+    <string name="continue_snatch">go on</string>
+    <string name="pay_money">Payment amount</string>
+    <string name="pay_money_value">%1$.2f Baht</string>
+    <string name="commodity_name">Product name</string>
+    <string name="buy_number">Amount</string>
+    <string name="commodity_issue">Round</string>
+    <string name="buy_number_value">%1$d time</string>
+    <string name="snatch_number">Number</string>
+
+    <!-- Payment Activity -->
+    <string name="payment_tip_title">Order submitted successfully, only the last step to pay it!</string>
+    <string name="payment_tip_subtitle">Please complete the payment within 30 minutes after the order is submitted, otherwise the order will be cancelled automatically.</string>
+    <string name="payment_indent_number">Order No.：%1$s</string>
+    <string name="payment">Payment</string>
+    <string name="payment_other">Other</string>
+    <string name="payment_immediate">Pay Now</string>
+    <string name="payment_alipay">Alipay</string>
+
+    <!-- Reloading -->
+    <string name="reloading_tip">Network unavailable, Please try again shortly</string>
+    <string name="reloading">Reloading</string>
+
+
+    <string name="check_all">View All</string>
+    <string name="photograph">Camera</string>
+    <string name="album">Album</string>
+    <string name="surplus_to_pay">Need to pay</string>
+    <string name="visa">VISA</string>
+    <string name="paypal">PayPal</string>
+    <string name="line_pay">Line Pay</string>
+    <string name="true_money">True Money</string>
+    <string name="mol">MOL</string>
+    <string name="blue_pay">BluePay</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="available_balance">Available:%1$.2fBaht</string>
+    <string name="currency_unit">Baht</string>
+    <string name="currency_symbol">฿</string>
+    <string name="balance_lack">Balance is not enough</string>
+    <string name="nickname_rule">4~20 characters,can only contain: characters, digits, underscore.</string>
+    <string name="input_new_phone">Enter phone Number</string>
+    <string name="sms_verify_code_hint">Enter verification code</string>
+    <string name="charge_money_title">Select amount (baht)</string>
+    <string name="charge_result_btn">Back to Home</string>
+    <string name="contact_us">Contact Us:</string>
+
+    <string name="faq">FAQ</string>
+    <string name="email_us">Email Us</string>
+    <string name="facebook_account">Facebook:LuckyBuy</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_help_center">Help</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_protocol">Terms of Use</string>
+    <string name="setting_about">About Us</string>
+    <string name="feeback_type_title">Select your round:</string>
+    <string name="advise">Suggest</string>
+    <string name="consult">Consultation</string>
+    <string name="other">Other</string>
+    <string name="contact_method">Contact</string>
+    <string name="contact_input_hint">Contact</string>
+    <string name="feedback_hint">Have questions? Please contact us!</string>
+    <string name="buy_record_none_tip">No records found</string>
+    <string name="scan_qr_code_tip">Scan QR Code，get LuckyBuy App</string>
+    <string name="about_us_bottom_tip">Copyright@2016 DeeDeeFun Inc. All Rights Reserved.</string>
+
+    <!--<string name="language_chinese_simple">中文（简体）</string>
+    <string name="language_english">English</string>
+    <string name="language_tailand">บทความภาษาไทย</string>-->
+
+    <string name="update_nickname">Change Nickname</string>
+    <string name="update_phone">Change Mobile</string>
+    <string name="send_verify_code_success">Send Success</string>
+    ======================New String 7-9================================
+    <string name="select_address">Select address</string>
+    <string name="address_default"> </string>
+    <string name="check_update">Check update</string>
+    <string name="add_success">Add success</string>
+    <string name="no_login">You are not login now</string>
+    
+    <!--AlertDialog Title-->
+    <string name="alertDialog_title">Prompt</string>
+    <string name="alertDialog_subtitle">Delete all history records？</string>
+    <string name="bask_dialog_subtitle">Discard the changes？</string>
+    <string name="nickname_dialog_subtitle">Discard the changes？</string>
+    <string name="phone_dialog_subtitle">Discard the changes？</string>
+    <string name="address_dialog_subtitle">Discard the changes？</string>
+    
+    <!-- Pay Result-->
+    <string name="pay_result_part_fail">Partial failure</string>
+    <string name="pay_result_part_fail_subtitle">%1$d of the goods fail</string>
+    
+    <string name="bask_success">Share order success</string>
+    <string name="bask_fail">Share order fail</string>
+    <string name="updateInfo_success">Change success</string>
+    <string name="updateInfo_fail">Change fail</string>
+    <string name="commit_success">Submit success</string>
+    <string name="commit_fail">Submit fail</string>
+    <string name="confirm_fail">Comfirm fail</string>
+    
+    <!-- Address Edit-->
+    <string name="address_not_complete">Please complete the address</string>
+    <!-- ConfirmInfo -->
+    <string name="confirm_into_address_tip">Select your address</string>
+    <string name="please_wait">Waiting</string>
+    
+    <!-- LuckyBuy Unveil -->
+    <string name="count_down_title">Countdown</string>
+    <string name="unveil_winner">Winner:%1$s</string>
+    <string name="unveil_participate_count">Count:%1$d</string>
+    
+    <string name="title_retrieve_pwd">Find password</string>
+    <string name="title_reset_pwd">Reset password</string>
+    <string name="pwd_input_new_hint">Enter new password</string>
+    <string name="pwd_confirm_hint">Comfirm password</string>
+    <string name="verifyCode_error">Enter new password</string>
+    <string name="pwd_disagree">Passwords does not match!</string>
+    <string name="pwd_length_error"> 6&#8211;16 character or numbers</string>
+    <string name="phone_length_error">enter your phone number</string>
+    
+    <string name="register_protocol">Terms of use</string>
+    <string name="register_protocol_agree">Read and agree</string>
+    <string name="register_fail">Register fail</string>
+    <string name="login_fail">Login fail</string>
+    <string name="check_all_title">Number(%1$d人次)</string>
+    <string name="again_buy">Buy again</string>
+    <string name="append">Append</string>
+    <string name="will_unveil">Announce soon，please wait&#8230;</string>
+    
+    <string name="confirm_receipt_fail">Failed to confirm receipt</string>
+    <string name="content_shortage">Write a review at least 30 words</string>
+    <string name="charge_method">Payment</string>
+    <string name="other_money">Other</string>
+    
+    <string name="no_receipt_address">No address</string>
+    <string name="add_address">Add address</string>
+    <string name="no_win_prize_record">No Record</string>
+    <string name="immediate_buy">Buy Now</string>
+    <string name="no_bask_record">No Record</string>
+    <string name="no_lucky_record">No Record</string>
+    <string name="no_charge_record">No Record</string>
+    <string name="diamond_count">Diamonds:%1$d</string>
+    <string name="calculating">Calculating&#8230;</string>
+    <string name="cart_count_tip">Select count</string>
+	
+	======================New String 8-12================================
+    <string name="confirm_charge">Confirm</string>
+    <string name="copy_complete">Copyed</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="payment_diamond_tip">You can participate by diamond，get diamond right now</string>
+    <string name="not_available_diamond">No diamond</string>
+    <string name="available_diamond">Use %1$d diamond equal ฿%2$.2f</string>
+    <string name="immediate_use">Use now</string>
+    <string name="card_number">Card Number  %1$2s</string>
+    <string name="card_pwd">Password  %1$2s</string>
+    <string name="win_bulletin">Congratulations %1$s 5 minute win %2$s</string>
+    <string name="win_probability">Probability:%1$s</string>
+    <string name="go_latest_issue_2">Go immediately</string>
+    <string name="latest_issue_going">New Round is ongoing</string>
+    <string name="Now_Participate_2">Participate now</string>
+    <string name="commend_check_in_wifi">Wifi Recommended</string>
+    <string name="win_info">Winning information:</string>
+    <string name="detail_share_content">I was playing Lucky Buy,you can win goods by only 10 baht %1$s You can come and join us %2$s</string>
+    <string name="win_record_share_content">I win %1$s by 10 baht，You can come and join us %2$s</string>
+    <string name="share_success">Share success</string>
+    <string name="messenger_not_install">Messenger is uninstall</string>
+    
+    <!-- version update-->
+    <string name="current_latest_tip">Current is the latest version</string>
+    <string name="obtain_version_exception">Get version fail!</string>
+    <string name="obtain_server_version_exception">Get version fail!</string>
+    <string name="version_update">Check new version</string>
+    <string name="current_version">Current Version:</string>
+    <string name="server_version">Latest version:</string>
+    <string name="immediately_update">Update</string>
+    <string name="next_update">Next time</string>
+    <string name="version_info">Version information</string>
+    <string name="update_thread_exception">Get version fail!</string>
+    <string name="download_error">Download fail！</string>
+    <string name="download_progress">Download progress:</string>
+
+======================New String 8-30================================
+    <string name="quick_register"><u>register</u></string>
+    <string name="charge_success_title">Congratulations, recharge success</string>
+    <string name="charge_success_subtitle">Charge %1$d baht success</string>
+    <string name="commodity_pull_out_shelves">The product is not existed or off the shelf</string>
+    <string name="select_picture_error">The image format is incorrect </string>
+    ======================New String 9-2================================
+    <string name="diamond_less_than_constant_value">Diamonds：%1$d (At least 100)</string>
+    <string name="commodity_amount">Sub Total</string>
+    <string name="payment_amount_text">Total：฿%1$.2f</string>
+    <string name="no_bask_record_dsc">Share Order List is empty</string>
+    <string name="facebook_no_bind_state">UnBind</string>
+    <string name="facebook_bind">Bind Facebook</string>
+
+    <!-- new charge 9-9-->
+    <string name="dialog_title_happy">Happy</string>
+    <string name="dialog_title_12call">One2Call</string>
+    <string name="dialog_title_SMS">SMS</string>
+<!--    <string name="input_card_no_tip">请输入卡号</string>
+    <string name="input_pwd_tip">请输入密码</string>-->
+    <string name="paysbuy_money_tip">Select amount (baht)</string>
+    <string name="sms_money_tip">Confirm to pay %1$d THB for Recharge？</string>
+    <string name="facebook_share_web">ฉันกำลังเล่น LuckyBuy อยู่ แค่ 10 บาทก็มีโอกาสถูกรางวัล iPhone 7 แล้ว รีบมาลองเล่นด้วยกันสิ http://api.10bbuy.com/Html/Help/AppDownload.htm</string>
+    <string name="balance_lack_tip">Your balance is insufficient ,please recharge!</string>
+    <string name="login_again">Can not get your info,please login again!</string>
+
+    ======================New String 9-14================================
+    <string name="count_max">Is the maximum number can be purchased</string>
+    <string name="pwd_input_tip">Password at 6 characters or digits</string>
+    <string name="clear_cache_success">Clear cache success</string>
+    <string name="clear_cache_fail">Clear cache fail</string>
+
+    ======================New String 9-21================================
+    <string name="no_bask_record2">No Record</string>
+    <string name="pay_money_value2">Use balance pay：%1$.2f bath</string>
+
+    ======================New String 10-10================================
+    <string name="lottery">In progress：%1$s</string>
+    <string name="win_count">Winning times：%1$d</string>
+    <string name="win_earnings">Total revenue：%1$d Baht</string>
+    <string name="invite_friends_tip">You have no friends, invite more friends</string>
+    <string name="charge_pause_notification">Notice of recharge unable</string>
+    <string name="charge_privilege_activity">Recharge promotion </string>
+    <string name="title_information_center">Notice</string>
+    <string name="participate_snatch_by_diamond_tip">100 diamonds can be use to participate LuckyBuy</string>
+    <string name="my_mission">My Task</string>
+    <string name="title_diamond_mission">Get diamond free</string>
+
+    ======================New String 10-21================================
+    <string name="logisticsInfo_subtitle">Logistics Information</string>
+    <string name="logistics_company">Logistics company：%1$s</string>
+    <string name="express_number">Tracking number：%1$s</string>
+    <string name="mission_introduction">Task description</string>
+</resources>

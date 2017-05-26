@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView34"
+        android:src="@mipmap/tanchuan_bg"
+        android:padding="@dimen/field_height_primary_s"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/view_120_s"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/issue"
+            android:id="@+id/win_prize_issue_tv"
+            android:textSize="@dimen/text_12_s"
+            android:textColor="@color/text_3_c"
+            android:layout_below="@+id/win_prize_cancel_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                                                                             "
+            android:id="@+id/win_prize_title_tv"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_16_s"
+            android:textColor="@color/deep_orange"
+            android:lines="2"
+            android:gravity="center_horizontal"
+            android:ellipsize="end"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/win_prize_cancel_iv"
+        android:src="@mipmap/cancel_icon"
+        android:padding="@dimen/gap_15_s"
+        android:layout_alignTop="@+id/imageView34"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp" />
+
+</RelativeLayout>

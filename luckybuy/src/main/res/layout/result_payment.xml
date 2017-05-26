@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/payment_successful_bg"
+    tools:context="com.luckybuy.MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/result"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_31_s"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s"
+            android:layout_alignParentBottom="true"
+        android:id="@+id/result_payment_btn_ll"
+        android:layout_marginBottom="@dimen/gap_20_s">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/continue_snatch"
+                android:id="@+id/result_snatch_continue_tv"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_button"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="@dimen/gap_25_s"
+                android:textSize="@dimen/text_14_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/snatch_record"
+                android:id="@+id/result_snatch_record_tv"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_button_red"
+                android:textColor="@color/light_red"
+                android:textSize="@dimen/text_14_s" />
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/charge_result_btn"
+        android:id="@+id/result_back_snatch_btn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="@drawable/background_button"
+        android:textSize="@dimen/text_16_s"
+        android:layout_marginLeft="@dimen/gap_15_s"
+        android:layout_marginRight="@dimen/gap_15_s"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginBottom="@dimen/gap_20_s" />
+</LinearLayout>

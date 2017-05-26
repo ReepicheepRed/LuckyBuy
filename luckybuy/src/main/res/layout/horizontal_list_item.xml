@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_list_item"
+            android:layout_width="@dimen/gap_50_s"
+            android:layout_height="@dimen/view_height_34_s"
+            android:src="@mipmap/haoyoudouzaiqiang"
+            android:paddingRight="@dimen/gap_16_s" />
+
+</LinearLayout>

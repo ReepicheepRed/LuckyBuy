@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper_friends"
+        android:background="@android:color/white">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/friends_login_frag"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/friends_no_one"
+            android:layout_gravity="center_horizontal" />
+
+        <com.luckybuy.layout.ListViewForScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/award_friends_Lv"
+            android:dividerHeight="@dimen/divider_h_s"
+            android:divider="@color/ground_c"/>
+   </ViewFlipper>
+</LinearLayout>

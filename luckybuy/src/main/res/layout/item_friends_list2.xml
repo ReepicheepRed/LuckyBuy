@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="@dimen/gap_15_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:id="@+id/item_friends_list2_rl"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_73_dp"
+        android:id="@+id/friends_avatar_iv2"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/friends_class_tv"
+        android:src="@mipmap/haoyouliebiaotouxiang"
+        android:paddingTop="@dimen/gap_12_s"
+        android:paddingBottom="@dimen/gap_12_s"
+        android:paddingRight="@dimen/gap_10_s"
+        android:paddingLeft="@dimen/gap_15_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_username"
+        android:id="@+id/friends_nickname_tv2"
+        android:layout_alignTop="@+id/friends_avatar_iv2"
+        android:layout_toRightOf="@+id/friends_avatar_iv2"
+        android:layout_toEndOf="@+id/friends_avatar_iv2"
+        android:paddingTop="@dimen/gap_10_s"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s" />
+
+    <TextView
+        android:text="@string/win_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friends_nickname_tv2"
+        android:layout_toRightOf="@+id/friends_avatar_iv2"
+        android:layout_toEndOf="@+id/friends_avatar_iv2"
+        android:id="@+id/friends_win_count_tv"
+        android:textColor="@color/text_9_c"
+        android:textSize="12sp"
+        android:paddingTop="@dimen/gap_5_s"
+        android:paddingBottom="@dimen/gap_3_s" />
+
+    <TextView
+        android:text="@string/win_earnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friends_win_earnings_tv"
+        android:layout_below="@+id/friends_win_count_tv"
+        android:layout_toRightOf="@+id/friends_avatar_iv2"
+        android:layout_toEndOf="@+id/friends_avatar_iv2"
+        android:textSize="12sp"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="@dimen/view_24_s"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/friends_class_tv"
+        android:textSize="18sp"
+        android:textColor="@color/text_6_c"
+        android:background="@mipmap/_jinpai"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView44"
+        android:src="@mipmap/enter_arrow_icon_2x"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

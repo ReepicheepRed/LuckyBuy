@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    tools:context="com.luckybuy.MainActivity"
+    android:id="@+id/activity_win_record_ll">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/win_record_lv"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="@dimen/gap_10_s"
+        android:divider="@color/ground_c"
+        android:background="@android:color/white"
+        android:visibility="visible"
+        tools:visibility="visible"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/blank_win_prize"/>
+</LinearLayout>

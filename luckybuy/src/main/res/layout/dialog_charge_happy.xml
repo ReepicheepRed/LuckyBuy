@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/gap_20_s">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/happy_bg"
+        android:id="@+id/charge_card_dialog_ll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_43_dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/charge_card_dialog_cancel_iv"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:src="@mipmap/quxiao_icon"
+                android:padding="@dimen/gap_10_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_title_happy"
+                android:id="@+id/charge_card_dialog_title"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_16_s" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charge_card_dialog_logo"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/happy_logo"
+            android:layout_marginTop="@dimen/view_30_s"
+            android:layout_marginBottom="@dimen/view_29_s" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charge_card_dialog_card_no_et"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/_shurukuang"
+            android:textColorHint="@color/hint_c"
+            android:hint="หมายเลขบัตร (10 หลัก) "
+            android:paddingLeft="@dimen/gap_10_s" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charge_card_dialog_card_pwd_et"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/_shurukuang"
+            android:layout_marginTop="@dimen/gap_10_s"
+            android:textColorHint="@color/hint_c"
+            android:hint="รหัสบัตร (6 หลัก)"
+            android:paddingLeft="@dimen/gap_10_s" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charge_card_dialog_charge_btn"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/chongzhi_btn"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/gap_35_dp"
+            android:textSize="@dimen/text_16_s"
+            android:text="@string/confirm_charge" />
+    </LinearLayout>
+</RelativeLayout>

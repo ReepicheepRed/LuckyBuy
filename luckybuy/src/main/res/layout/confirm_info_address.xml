@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.luckybuy.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/gap_15_s"
+        android:background="@android:color/white"
+        android:id="@+id/confirm_info_address_rl"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView31"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/address_icon"
+            android:layout_marginTop="@dimen/gap_7_s"
+            android:paddingRight="@dimen/gap_15_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_user_name"
+            android:id="@+id/confirm_user_name_tv"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView31"
+            android:layout_toEndOf="@+id/imageView31"
+            android:textColor="@color/text_3_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_address"
+            android:id="@+id/confirm_user_address_tv"
+            android:layout_below="@+id/confirm_user_name_tv"
+            android:layout_toRightOf="@+id/imageView31"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s"
+            android:paddingTop="@dimen/gap_11_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:id="@+id/confirm_phone_tv"
+            android:layout_alignTop="@+id/confirm_user_name_tv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_3_c" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_26_s"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:id="@+id/confirm_btn_ll"
+        android:layout_marginBottom="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="@dimen/view_80_s"
+            android:layout_height="@dimen/view_26_s"
+            android:text="@string/user_other"
+            android:id="@+id/confirm_user_other_tv"
+            android:layout_marginRight="@dimen/gap_10_s"
+            android:background="@drawable/background_button_white"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_6_c" />
+
+        <TextView
+            android:layout_width="@dimen/view_80_s"
+            android:layout_height="@dimen/view_26_s"
+            android:text="@string/confirm"
+            android:id="@+id/confirm_ok_tv"
+            android:background="@drawable/background_button"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_s" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:id="@+id/confirm_info_address_tip_rl"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView14"
+            android:src="@mipmap/address_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_into_address_tip"
+            android:id="@+id/textView13"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView14"
+            android:layout_toEndOf="@+id/imageView14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView17"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/enter_arrow_icon_2x" />
+    </RelativeLayout>
+</LinearLayout>

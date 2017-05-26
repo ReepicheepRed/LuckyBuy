@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\Android\\AndroidProjects\\LuckyBuy\\LuckyBuy\\test\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk-rKZ\\values-kk-rKZ.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 243,
+                    "endOffset": 344
+                },
+                "from": {
+                    "file": "C:\\Users\\zhiPeng.S\\.android\\build-cache\\287cbe5afa6e5d74f53f3cda4ef1cae88179c61c\\output\\res\\values-kk-rKZ\\common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 247,
+                        "endOffset": 413
+                    }
+                }
+            }
+        ]
+    }
+]

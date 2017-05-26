@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/gap_20_s">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/_true_bg"
+        android:id="@+id/charge_paysbuy_dialog_ll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_43_dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/charge_paysbuy_dialog_cancel_iv"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:src="@mipmap/quxiao_icon"
+                android:padding="@dimen/gap_10_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/charge_paysbuy_dialog_title"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_16_s"
+                android:text="@string/paysbuy_pay" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paysbuy_money_tip"
+            android:id="@+id/textView45"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:paddingTop="@dimen/gap_16_s"
+            android:paddingBottom="@dimen/gap_14_s"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s"
+            android:paddingLeft="@dimen/gap_20_s" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30_s"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/gap_20_s"
+            android:paddingRight="@dimen/gap_20_s">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/money_tv_0"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:id="@+id/money_tv_1"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/gap_15_s"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:id="@+id/money_tv_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30_s"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/gap_20_s"
+            android:paddingRight="@dimen/gap_20_s"
+            android:layout_marginTop="@dimen/gap_18_s"
+            android:layout_marginBottom="@dimen/gap_18_s">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/money_tv_3"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:id="@+id/money_tv_4"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/gap_15_s"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:id="@+id/money_tv_5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_30_s"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/gap_20_s"
+            android:paddingRight="@dimen/gap_20_s" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:id="@+id/money_tv_6"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:onClick="onClick" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/other"
+                android:id="@+id/money_tv_7"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/gap_15_s"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView71"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background_selector_charge_paysbuy"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_15_s"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_charge"
+            android:id="@+id/charge_paysbuy_dialog_charge_btn"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/chongzhi_btn"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/gap_35_dp"
+            android:textSize="@dimen/text_16_s" />
+    </LinearLayout>
+</RelativeLayout>

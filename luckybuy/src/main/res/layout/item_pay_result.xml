@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:background="@android:color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/field_height_primary_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_money"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_3_c"
+        android:id="@+id/result_status_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_money_value"
+        android:id="@+id/pay_money_value"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_15_s"
+        android:textColor="@color/light_red" />
+</RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/divider_h_s"
+    android:background="@color/divider_c"
+    android:layout_marginLeft="@dimen/gap_15_s" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_30_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commodity_name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/award_name"
+        android:id="@+id/result_award_name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_3_c"
+        android:ellipsize="end"
+        android:ems="11"
+        android:singleLine="true"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_30_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_number"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_number_value"
+        android:id="@+id/buy_number_value"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_3_c" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_30_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commodity_issue"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sns_id_value"
+        android:id="@+id/result_issue_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_14_s"
+        android:textColor="@color/text_3_c" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_30_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s"
+    android:id="@+id/snatch_number_rl"
+    android:gravity="right">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/snatch_number"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_all"
+        android:id="@+id/result_check_all"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/light_blue"
+        android:paddingLeft="@dimen/gap_14_s" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sns_id_value"
+        android:id="@+id/result_luckyid_1"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/result_check_all"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_3_c"
+        android:paddingLeft="@dimen/gap_14_s" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sns_id_value"
+        android:id="@+id/result_luckyid_2"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/result_luckyid_1"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_3_c" />
+</RelativeLayout>
+</LinearLayout>

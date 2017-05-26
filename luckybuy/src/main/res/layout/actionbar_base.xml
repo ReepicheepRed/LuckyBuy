@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height_s"
+    android:gravity="center_vertical"
+    android:background="@color/bg_f9_c"
+    android:id="@+id/detail_actionbar_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/back_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/nav_back_icon_2x"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                "
+        android:id="@+id/title_activity"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/title_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/title_login"
+        android:id="@+id/right_view"
+        android:layout_centerVertical="true"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/text_14_s"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/gap_15_s"
+        android:visibility="invisible"
+        android:paddingLeft="@dimen/gap_15_s" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

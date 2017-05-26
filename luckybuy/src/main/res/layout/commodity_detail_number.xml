@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:id="@+id/detail_number_ll"
+    android:paddingTop="@dimen/gap_10_s"
+    tools:context="com.luckybuy.MainActivity"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView25"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/juchi_bg_2x"
+        android:layout_marginBottom="-1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ground_c">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyNumber"
+            android:id="@+id/detail_purchase_count_tv"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_11_s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:paddingLeft="@dimen/gap_10_s"
+            android:layout_alignBaseline="@+id/detail_check_all_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_all"
+            android:id="@+id/detail_check_all_tv"
+            android:layout_centerVertical="true"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/text_11_s"
+            android:paddingTop="@dimen/gap_11_s"
+            android:paddingBottom="@dimen/gap_3_s"
+            android:paddingLeft="@dimen/gap_10_s"
+            android:paddingRight="@dimen/gap_10_s"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_toRightOf="@+id/detail_purchase_count_tv" />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_33_s"
+        android:id="@+id/detail_rob_number_gv"
+        android:numColumns="5"
+        android:horizontalSpacing="@dimen/gap_9_s"
+        android:background="@color/ground_c"
+        android:layout_gravity="left"
+        android:paddingLeft="@dimen/gap_10_s" />
+</LinearLayout>

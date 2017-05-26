@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cmd_bannerFl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_292_s"
+        android:background="@android:color/white">
+        <com.luckybuy.view.ViewFlow
+            android:id="@+id/cmd_bannerVf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="3dip">
+            <com.luckybuy.view.CircleFlowIndicator
+                android:id="@+id/cmd_bannerFi"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:radius="4dip"
+                app:circleSeparation = "20dip"
+                app:inactiveType="fill"
+                app:activeType="fill"
+                app:activeColor="@color/light_red"
+                app:inactiveColor="#ffffff"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                              "
+        android:id="@+id/detail_award_name_tv"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="@dimen/gap_22_s"
+        android:paddingLeft="@dimen/gap_10_s"
+        android:background="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_semtransparent_50">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/view_335_s"
+        android:layout_height="@dimen/view_158_s"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="@dimen/view_158_s"
+        android:paddingBottom="@dimen/gap_51_s"
+        android:background="@drawable/background_white_6"
+        android:id="@+id/check_all_ll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/check_all_title"
+                android:id="@+id/check_all_title"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_14_s" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_all_cancel"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/quxiao_icon"
+                android:padding="@dimen/gap_5_s" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView33"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/xuxian_icon"
+            android:layout_marginLeft="@dimen/gap_20_s"
+            android:layout_marginRight="@dimen/gap_20_s" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_all_gv"
+            android:layout_gravity="center_horizontal"
+            android:numColumns="5"
+            android:paddingLeft="@dimen/gap_20_s"
+            android:paddingRight="@dimen/gap_20_s" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_detail_rl">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar_award_detail_rl"
+        android:id="@+id/detail_scrollview"
+        android:fillViewport="false"
+        android:background="@color/ground_c"
+        android:layout_marginBottom="@dimen/field_height_primary_s"
+        >
+<!--    <com.luckybuy.layout.ScrollviewForViewFolw
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_scrollview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/actionbar_height_s"
+        android:layout_below="@+id/actionbar_award_detail_rl">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/commodity_detail_top"
+                android:layout_gravity="center_horizontal" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/commodity_detail_center" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/commodity_detail_bottom" />
+        </LinearLayout>
+    <!--</com.luckybuy.layout.ScrollviewForViewFolw>-->
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include
+        android:id="@+id/actionbar_award_detail_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_award_detail"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/commodity_detail_button"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

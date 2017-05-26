@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/gap_13_s"
+    android:paddingBottom="@dimen/gap_13_s"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s"
+    android:background="@android:color/white">
+
+    <TextView
+        android:text="10:22:24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/info_time_tv"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s" />
+
+    <TextView
+        android:text="@string/charge_pause_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_time_tv"
+        android:id="@+id/info_title_tv"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s"
+        android:layout_marginTop="@dimen/gap_10_s" />
+
+    <TextView
+        android:text="2016-10-08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_date_tv"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s"
+        android:layout_above="@+id/info_title_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

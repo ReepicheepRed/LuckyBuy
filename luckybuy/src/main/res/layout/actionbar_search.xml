@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height_s"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:weightSum="1"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:fitsSystemWindows="true"
+    android:background="@color/ground_c"
+    tools:context="com.luckybuy.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/search_group"
+        android:layout_height="@dimen/view_height_34_s"
+        android:background="@mipmap/nav_search_enter"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/gap_10_s">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView12"
+            android:src="@mipmap/nav_search_icon"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/gap_7_s" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_et"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView12"
+            android:layout_toEndOf="@+id/imageView12"
+            android:background="@null"
+            android:hint="@string/hint_search"
+            android:textColorHint="@color/text_9_c"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_14_s"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_toLeftOf="@+id/search_remove_iv" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/search_remove_iv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/nav_entercancel_icon"
+            android:paddingLeft="@dimen/gap_8_s"
+            android:paddingRight="@dimen/gap_8_s"
+            tools:visibility="visible"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/cancel"
+        android:id="@+id/search_cancel_btn"
+        android:background="@null"
+        android:paddingLeft="@dimen/gap_10_s"
+        android:paddingRight="@dimen/gap_10_s"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s"
+        android:gravity="center" />
+</LinearLayout>

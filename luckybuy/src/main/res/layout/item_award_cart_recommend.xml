@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:descendantFocusability="blocksDescendants">
+<LinearLayout
+    android:layout_width="@dimen/view_125_s"
+    android:layout_height="@dimen/view_155_s"
+    android:background="@mipmap/commodity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/gap_22_s"
+    android:paddingBottom="@dimen/gap_13_s"
+    android:paddingLeft="@dimen/gap_5_s"
+    android:paddingRight="@dimen/gap_5_s">
+
+    <ImageView
+        android:layout_width="@dimen/view_60_s"
+        android:layout_height="@dimen/view_60_s"
+        android:id="@+id/cart_recommend_iv"
+        android:src="@mipmap/commodity_image_120" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/award_name"
+        android:id="@+id/cart_recommend_name_tv"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_12_s"
+        android:paddingTop="@dimen/gap_10_s"
+        android:maxLines="2"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:paddingBottom="@dimen/gap_5_s"
+        android:paddingLeft="@dimen/gap_10_s"
+        android:paddingRight="@dimen/gap_10_s" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_5_s"
+        android:id="@+id/cart_recommend_pb"
+        android:progressDrawable="@drawable/progressbar_color"
+        android:progress="80"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginLeft="@dimen/gap_20_s"
+        android:layout_marginRight="@dimen/gap_20_s" />
+</LinearLayout>
+</LinearLayout>

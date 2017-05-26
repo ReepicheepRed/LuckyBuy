@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/payment_bottom_rl">
+
+    <Button
+        android:layout_width="@dimen/view_121_dp"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:text="@string/payment_immediate"
+        android:id="@+id/payment_immediate_btn"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_red"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_16_s"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_amount_text"
+        android:id="@+id/payment_amount_tv"
+        android:layout_toLeftOf="@+id/payment_immediate_btn"
+        android:layout_toStartOf="@+id/payment_immediate_btn"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_14_s"
+        android:textColor="@color/text_3_c"
+        android:paddingRight="@dimen/gap_15_s" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c" />
+</RelativeLayout>

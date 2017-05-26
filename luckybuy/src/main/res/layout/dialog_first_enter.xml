@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView34_f"
+        android:src="@mipmap/_5taizhu_bg"
+        android:padding="@dimen/field_height_primary_s"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รับทันที"
+        android:id="@+id/first_enter_issue_tv"
+        android:textSize="@dimen/text_19_s"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/_btn"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageView34_f"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_enter_cancel_iv"
+        android:src="@mipmap/_quxiao_btn"
+        android:padding="@dimen/gap_15_s"
+        android:layout_alignTop="@+id/imageView34_f"
+        android:layout_alignRight="@+id/imageView34_f"
+        android:layout_alignEnd="@+id/imageView34_f" />
+</RelativeLayout>

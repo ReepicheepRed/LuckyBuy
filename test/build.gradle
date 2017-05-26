@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 24
+    }
+    defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':adjust')
+    androidTestCompile 'com.android.support.test:runner:0.4'
+    // Set this dependency to use JUnit 4 rules
+    androidTestCompile 'com.android.support.test:rules:0.4'
+}

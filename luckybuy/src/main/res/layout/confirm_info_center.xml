@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/gap_15_s"
+    tools:context="com.luckybuy.MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_40_dp"
+    android:text="@string/commodity_state"
+    android:id="@+id/textView54"
+    android:gravity="center_vertical"
+    android:textColor="@color/text_3_c"
+    android:textSize="@dimen/text_15_s" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/divider_h_s"
+    android:background="@color/divider_c"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="@dimen/divider_h_s"
+        android:layout_height="143dp"
+        android:background="@color/divider_c"
+        android:layout_marginLeft="@dimen/gap_10_s"
+        android:id="@+id/view2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_40_dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/obtain_commodity"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:id="@+id/state_tv_1"
+                android:paddingLeft="@dimen/gap_25_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/history_time"
+                android:id="@+id/info_tv_1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_13_s"
+                android:textColor="@color/text_6_c"
+                android:paddingRight="@dimen/gap_15_s"
+                android:visibility="visible" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h_s"
+                android:background="@color/divider_c"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/gap_25_s" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/gap_21_s"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag_iv_1"
+                    android:src="@mipmap/shangpingxuanzedian_selected" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/view_80_s"
+                android:layout_height="@dimen/gap_27_s"
+                android:text="@string/confirm"
+                android:id="@+id/confirm_ok_tv_1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_button"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_14_s"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_40_dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commodity_distribute"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:id="@+id/state_tv_2"
+                android:paddingLeft="@dimen/gap_25_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/history_time"
+                android:id="@+id/info_tv_2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_13_s"
+                android:textColor="@color/text_6_c"
+                android:paddingRight="@dimen/gap_15_s"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h_s"
+                android:background="@color/divider_c"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/gap_25_s" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/gap_21_s"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag_iv_2"
+                    android:src="@mipmap/shangpingxuanzedian_default" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="@dimen/view_80_s"
+                android:layout_height="@dimen/gap_27_s"
+                android:text="@string/confirm"
+                android:id="@+id/confirm_ok_tv_2"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_button"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_14_s"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_40_dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_receipt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:id="@+id/state_tv_3"
+                android:paddingLeft="@dimen/gap_25_s"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/history_time"
+                android:id="@+id/info_tv_3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_13_s"
+                android:textColor="@color/text_6_c"
+                android:paddingRight="@dimen/gap_15_s"
+                android:visibility="gone" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h_s"
+                android:background="@color/divider_c"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/gap_25_s" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/gap_21_s"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag_iv_3"
+                    android:src="@mipmap/shangpingxuanzedian_default" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="@dimen/view_80_s"
+                android:layout_height="@dimen/gap_27_s"
+                android:text="@string/confirm"
+                android:id="@+id/confirm_ok_tv_3"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_button"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_14_s"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_40_dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finish"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:id="@+id/state_tv_4"
+                android:paddingLeft="@dimen/gap_25_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/history_time"
+                android:id="@+id/info_tv_4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_13_s"
+                android:textColor="@color/text_6_c"
+                android:paddingRight="@dimen/gap_15_s"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/gap_21_s"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag_iv_4"
+                    android:src="@mipmap/shangpingxuanzedian_default" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="@dimen/view_80_s"
+                android:layout_height="@dimen/gap_27_s"
+                android:text="@string/bask"
+                android:id="@+id/confirm_ok_tv_4"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_button_red"
+                android:textColor="@color/light_red"
+                android:gravity="center"
+                android:textSize="@dimen/text_14_s"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

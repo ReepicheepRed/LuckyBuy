@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        android:gravity="center_vertical"
+        android:background="@color/bg_f9_c">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/back_web_iv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/nav_back_icon_2x"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="                      "
+            android:id="@+id/title_web_activity"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/title_s"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/refresh_web_iv"
+            android:layout_toRightOf="@+id/back_web_iv"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/refresh_web_iv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/nav_back_icon_2x"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s"
+            android:visibility="invisible" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_wv"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mine_viewflipper"
+    android:paddingBottom="@dimen/navigation_bar_height_s">
+
+
+    <!--<fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.luckybuy.login.LoginFragment"
+        android:id="@+id/mine_login_fragment" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/mine_login" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mine_fl"/>
+</LinearLayout>

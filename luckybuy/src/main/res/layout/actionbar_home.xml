@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height_s"
+    android:background="@color/light_red">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/title_home"
+        android:id="@+id/title_cart"
+        android:gravity="center"
+        android:textSize="@dimen/title_s"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_search_ib"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/title_cart"
+        android:layout_alignBottom="@+id/title_cart"
+        android:src="@mipmap/search_icon_2x"
+        android:background="@null"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/zuanshirenwu_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/nav_mission_iv"
+        android:padding="@dimen/gap_15_s" />
+</RelativeLayout>

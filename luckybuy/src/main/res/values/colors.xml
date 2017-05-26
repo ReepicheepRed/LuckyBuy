@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--background Color-->
+    <color name="background_transparent">#00000000</color>
+    <color name="ground_c">#f5f5f5</color>
+
+    <!--Component Color-->
+    <color name="divider_c">#e5e5e5</color>
+    <drawable name="divide_c">#e5e5e5</drawable>
+
+    <!--Text Color-->
+    <color name="title_c">#000000</color>
+    <color name="title_light_c">#8f8f8f</color>
+    <color name="content_c">#333333</color>
+    <color name="hint_c">#bbbbbb</color>
+    <color name="text_9_c">#999999</color>
+    <color name="light_blue">#007aff</color>
+    <color name="light_red">#e74b59</color>
+    <color name="text_3_c">#333333</color>
+    <color name="text_4_c">#444444</color>
+    <color name="text_6_c">#666666</color>
+    <color name="bg_f9_c">#f9f9f9</color>
+    <color name="view_d0_c">#d0d0d0</color>
+    <color name="text_8f_c_">#8f8f8f</color>
+    <color name="background_semtransparent_50">#80000000</color>
+    <color name="background_semtransparent_80">#cc000000</color>
+    <color name="light_yellow">#fff3cf</color>
+    <color name="dark_yellow">#f58b0e</color>
+    <color name="dark_m_yellow">#feea0f</color>
+    <color name="text_8e_c">#8e8e8e</color>
+    <color name="deep_orange">#e5550e</color>
+    <color name="view_f1_c">#f1f1f1</color>
+</resources>

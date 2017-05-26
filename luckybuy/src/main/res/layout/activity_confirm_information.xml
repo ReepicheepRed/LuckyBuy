@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    tools:context="com.luckybuy.MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_real" />
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_virtual"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

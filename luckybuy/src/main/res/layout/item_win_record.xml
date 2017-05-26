@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_33_s">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/view_33_s"
+            android:text="@string/detail_unveil_time"
+            android:id="@+id/win_record_unveil_time_tv"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_12_s"
+            android:textColor="@color/text_6_c"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/win_record_share_iv"
+            android:src="@mipmap/nav_share_icon"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_136_s"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/gap_11_s">
+
+        <ImageView
+            android:layout_width="@dimen/view_60_s"
+            android:layout_height="@dimen/view_60_s"
+            android:id="@+id/win_record_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/award_default_120"
+            android:layout_marginTop="@dimen/gap_8_s" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/win_record_icon"
+            android:layout_toEndOf="@+id/win_record_icon"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/gap_10_s">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/award_name"
+                android:id="@+id/win_record_title"
+                android:textSize="@dimen/text_14_s"
+                android:textColor="@color/text_3_c"
+                android:lineSpacingExtra="@dimen/gap_6_s"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_demand"
+                android:id="@+id/win_record_total_demand_tv"
+                android:textColor="@color/text_9_c"
+                android:textSize="@dimen/text_12_s"
+                android:paddingTop="@dimen/gap_3_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/issue"
+                android:id="@+id/win_record_issue_tv"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/text_9_c"
+                android:paddingTop="@dimen/gap_3_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lucky_number"
+                android:id="@+id/win_record_lucky_id_tv"
+                android:textColor="@color/text_9_c"
+                android:textSize="@dimen/text_12_s"
+                android:paddingTop="@dimen/gap_3_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_unveil_part_count"
+                android:id="@+id/win_record_count_tv"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/text_9_c"
+                android:paddingTop="@dimen/gap_3_s" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_54_s"
+        android:id="@+id/win_record_state_rl">
+
+        <TextView
+            android:layout_width="@dimen/view_106_s"
+            android:layout_height="@dimen/view_29_s"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/confirm_address"
+            android:id="@+id/win_confirm_tv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_button"
+            android:textSize="@dimen/text_15_s"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/gap_15_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wait_shipments"
+            android:id="@+id/win_shipments_tv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c"
+            android:paddingRight="@dimen/gap_15_s" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"/>
+    </RelativeLayout>
+
+</LinearLayout>

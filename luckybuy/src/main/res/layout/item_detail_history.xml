@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="@dimen/gap_9_s">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height_s"
+        android:id="@+id/his_header_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/yonghucanyujilu"
+        android:paddingRight="@dimen/gap_10_s"
+        android:paddingTop="@dimen/gap_8_s"
+        android:paddingBottom="@dimen/gap_8_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_username"
+        android:id="@+id/his_name"
+        android:layout_alignTop="@+id/his_header_iv"
+        android:layout_toRightOf="@+id/his_header_iv"
+        android:layout_toEndOf="@+id/his_header_iv"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_3_c"
+        android:maxEms="20"
+        android:ellipsize="end"
+        android:ems="10"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_userIp"
+        android:id="@+id/his_ip"
+        android:layout_below="@+id/his_name"
+        android:layout_toRightOf="@+id/his_header_iv"
+        android:layout_toEndOf="@+id/his_header_iv"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@color/text_9_c"
+        android:layout_marginTop="@dimen/gap_11_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_time"
+        android:id="@+id/his_time"
+        android:layout_alignTop="@+id/his_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_userPartCount"
+        android:id="@+id/his_number"
+        android:layout_alignTop="@+id/his_ip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@color/text_9_c" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"
+        android:layout_alignBottom="@+id/his_header_iv"
+        android:layout_toRightOf="@+id/his_header_iv" />
+</RelativeLayout>

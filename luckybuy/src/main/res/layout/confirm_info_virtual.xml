@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/card_virtual_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_virtual_iv"
+        android:src="@mipmap/_ais"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_alignBottom="@+id/card_virtual_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/gap_8_s"
+        android:layout_alignLeft="@+id/card_virtual_iv"
+        android:layout_alignRight="@+id/card_virtual_iv"
+        android:id="@+id/card_use_ll">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/card_number"
+            android:id="@+id/card_number_tv"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_28_s"
+            android:textSize="@dimen/text_13_s" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/card_pwd"
+            android:id="@+id/card_pwd_tv"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/text_13_s" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/card_virtual_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/gap_8_s"
+        android:id="@+id/card_not_use_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/_lijishiyong_bg"
+            android:id="@+id/card_cover_iv" />
+
+        <Button
+            android:layout_width="@dimen/view_100_s"
+            android:layout_height="@dimen/gap_27_s"
+            android:text="@string/immediate_use"
+            android:id="@+id/card_use_btn"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_white"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

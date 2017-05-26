@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/detail_countdown_bg_2x"
+    android:padding="@dimen/gap_10_s"
+    android:id="@+id/detail_countdown_rl"
+    tools:context="com.luckybuy.MainActivity"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/issue"
+        android:id="@+id/detail_countdown_issue_tv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_12_s"
+        android:paddingTop="@dimen/gap_5_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_countdown"
+        android:id="@+id/detail_countdown_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@android:color/white"
+        android:paddingTop="@dimen/gap_10_s"
+        android:layout_below="@+id/detail_countdown_issue_tv"/>
+
+    <Button
+        android:layout_width="@dimen/view_60_s"
+        android:layout_height="@dimen/gap_22_s"
+        android:text="@string/caculate_detail"
+        android:id="@+id/detail_calculate_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/calculation_details_btn"
+        android:textSize="@dimen/text_12_s" />
+</RelativeLayout>

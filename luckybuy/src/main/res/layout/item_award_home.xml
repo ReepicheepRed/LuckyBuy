@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:id="@+id/award_item_rl">
+
+    <ImageView
+        android:layout_width="@dimen/award_height_s"
+        android:layout_height="@dimen/award_105_s"
+        android:id="@+id/home_award_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/award_default"
+        android:layout_marginRight="@dimen/gap_10_s"
+        android:paddingTop="@dimen/gap_17_dp"
+        android:paddingBottom="@dimen/gap_17_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/award_name"
+        android:id="@+id/award_name_tv"
+        android:layout_alignTop="@+id/home_award_iv"
+        android:layout_toRightOf="@+id/home_award_iv"
+        android:layout_toEndOf="@+id/home_award_iv"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="17dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:ems="12"/>
+
+    <Button
+        android:layout_width="@dimen/view_65_s"
+        android:layout_height="@dimen/gap_27_s"
+        android:text="@string/add_list"
+        android:id="@+id/home_add_list_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/jiaruqingdan_btn"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/light_red"
+        android:layout_marginLeft="@dimen/gap_12_s"
+        android:layout_marginRight="@dimen/gap_10_s" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_pb1"
+        android:layout_alignBottom="@+id/home_award_iv"
+        android:layout_toRightOf="@+id/home_award_iv"
+        android:layout_toLeftOf="@+id/home_add_list_btn"
+        android:src="@mipmap/indiana_bar"
+        android:paddingBottom="17dp"
+        android:visibility="gone" />
+    <ProgressBar
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar_color"
+        android:progress="80"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gap_22_s"
+        android:id="@+id/current_pb"
+        android:layout_alignBottom="@+id/home_award_iv"
+        android:layout_toRightOf="@+id/home_award_iv"
+        android:layout_toLeftOf="@+id/home_add_list_btn"
+        android:paddingBottom="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_demand"
+        android:id="@+id/total_tv"
+        android:layout_above="@+id/current_pb"
+        android:layout_toRightOf="@+id/home_award_iv"
+        android:layout_toEndOf="@+id/home_award_iv"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_9_c"
+        android:layout_marginBottom="@dimen/gap_12_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surplus"
+        android:id="@+id/surplus_tv"
+        android:layout_alignTop="@+id/total_tv"
+        android:layout_toLeftOf="@+id/home_add_list_btn"
+        android:layout_toStartOf="@+id/home_add_list_btn"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_9_c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/ground_c"
+        android:layout_alignBottom="@+id/home_award_iv"
+        android:id="@+id/divider_home" />
+</RelativeLayout>

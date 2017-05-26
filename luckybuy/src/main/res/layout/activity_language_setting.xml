@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    tools:context="com.luckybuy.MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/chinese_rl"
+            android:layout_below="@+id/actionbar_setting"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_chinese_simple"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/yuyanxuanze_selected"
+                android:padding="@dimen/gap_15_s"
+                android:id="@+id/chinese_flag_iv"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h_s"
+                android:background="@color/divider_c"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/english_rl"
+            android:layout_below="@+id/actionbar_setting"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_english"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h_s"
+                android:background="@color/divider_c"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yuyanxuanze_selected"
+                android:padding="@dimen/gap_15_s"
+                android:id="@+id/english_flag_iv"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/thai_rl"
+            android:layout_below="@+id/actionbar_setting"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_tailand"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yuyanxuanze_selected"
+                android:padding="@dimen/gap_15_s"
+                android:id="@+id/thai_flag_iv"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

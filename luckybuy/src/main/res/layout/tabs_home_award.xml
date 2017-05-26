@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/gap_10_s"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/award_42_s"
+        android:id="@+id/linearLayout">
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/hot_btn"
+        android:layout_weight="1"
+        android:background="@null"
+        android:text="@string/tabs_home_hot"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/tabs_home_friends"
+            android:id="@+id/friends_btn"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_14_s" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/tabs_home_latest"
+            android:id="@+id/latest_btn"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicator_iv"
+        android:src="@mipmap/title_selected"
+        android:paddingLeft="@dimen/gap_22_s"
+        android:paddingRight="@dimen/gap_22_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c" />
+
+
+   <FrameLayout
+        android:id="@+id/content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    </FrameLayout>
+
+
+</LinearLayout>

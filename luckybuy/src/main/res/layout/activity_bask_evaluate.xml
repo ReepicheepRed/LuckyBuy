@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    android:id="@+id/activity_bask_evaluate_ll">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_bask_soon"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_250_s"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/divider_h_s"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_155_s"
+            android:id="@+id/bask_wvaluate_et"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:hint="@string/bask_evaluate_tip"
+            android:gravity="top"
+            android:textSize="@dimen/text_12_s"
+            android:paddingTop="@dimen/gap_10_s"
+            android:textColor="@color/text_3_c"
+            android:textColorHint="@color/hint_c" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_75_s"
+            android:id="@+id/bask_picture_gv"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/bask_wvaluate_et"
+            android:layout_alignStart="@+id/bask_wvaluate_et"
+            android:numColumns="4"
+            android:layout_marginBottom="@dimen/gap_13_s"
+            android:horizontalSpacing="@dimen/gap_8_s" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40_dp"
+        android:text="@string/commit_evaluate"
+        android:id="@+id/commit_evaluate_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/gap_20_s"
+        android:background="@drawable/background_button"
+        android:layout_marginLeft="@dimen/gap_15_s"
+        android:layout_marginRight="@dimen/gap_15_s"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_16_s" />
+</LinearLayout>

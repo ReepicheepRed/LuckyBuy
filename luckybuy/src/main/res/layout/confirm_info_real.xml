@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/confirm_info_real_ll"
+    android:visibility="gone"
+    tools:context="com.luckybuy.MainActivity"
+    tools:visibility="visible">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_address"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView37"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/shouhuodizhizhuangshibian"
+        android:paddingBottom="@dimen/gap_10_s" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_center"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_logistics"
+        android:layout_marginTop="@dimen/gap_10_s"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/confirm_info_bottom"
+        android:layout_marginTop="@dimen/gap_10_s" />
+</LinearLayout>

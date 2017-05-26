@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bannerFl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/banner_height_s"
+    android:background="#ffffff">
+    <com.luckybuy.layout.ViewFlowForViewPager
+        android:id="@+id/bannerVf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_15_s"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:paddingRight="@dimen/gap_10_s">
+        <com.luckybuy.layout.CircleFlowIndicator
+            android:id="@+id/bannerFi"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="2dip"
+            app:radius="4dip"
+            app:circleSeparation = "20dip"
+            app:inactiveType="fill"
+            app:activeType="fill"
+            app:activeColor="#e74b59"
+            app:inactiveColor="#ffffff"
+            android:layout_marginLeft="@dimen/gap_9_s" />
+    </LinearLayout>
+</FrameLayout>

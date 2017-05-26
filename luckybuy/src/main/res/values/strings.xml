@@ -1,0 +1,467 @@
+<resources>
+    <string name="app_name">LuckyBuy</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="facebook_app_id">1837215296500425</string>
+
+    <string name="app_url">https://play.google.com/store/apps/details?id=com.luckybuy</string>
+    <string name="app_url_share">http://api.10bbuy.com/Html/Help/AppDownload.htm</string>
+    <string name="app_url_native">/LuckyBuy.apk</string>
+    <string name="connect_fail">failed to connect after 15000ms: connect failed: ENETUNREACH (Network is unreachable)</string>
+
+    <string-array name="nav_name">
+        <item>夺宝</item>
+        <item>最新揭晓</item>
+        <item>好友</item>
+        <item>清单</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="fsns_record">
+        <item>夺宝记录</item>
+        <item>幸运记录</item>
+        <item>晒单记录</item>
+    </string-array>
+    <string-array name="buy_record">
+        <item>全部</item>
+        <item>进行中</item>
+        <item>已揭晓</item>
+    </string-array>
+
+    <string-array name="charge_type">
+        <item>VISA</item>
+        <item>PayPal</item>
+        <item>Line Pay</item>
+        <item>True Money</item>
+        <item>MOL</item>
+        <item>BluePay</item>
+        <item>AliPay</item>
+    </string-array>
+
+    <string name="nav_home">夺宝</string>
+    <string name="nav_unveil">最新揭晓</string>
+    <string name="nav_friends">好友</string>
+    <string name="nav_cart">清单</string>
+    <string name="nav_mine">我的</string>
+
+    
+    <string name="title_home">Lucky Buy</string>
+    <string name="title_login">登录</string>
+    <string name="title_setting">设置</string>
+    <string name="title_sns">个人中心</string>
+    <string name="title_address_manager">管理地址</string>
+    <string name="title_address_edit">添加新地址</string>
+    <string name="title_bask_evaluate">评价晒单</string>
+    <string name="title_confirm_info">信息确认</string>
+    <string name="title_pay_result">支付结果</string>
+    <string name="title_payment">支付订单</string>
+
+
+    <string name="tabs_home_hot">热门</string>
+    <string name="tabs_home_friends">好友都在抢</string>
+    <string name="tabs_home_latest">最新</string>
+    <string name="account_hint">请输入手机号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="facebook">Facebook</string>
+    <string name="no_account">没有账号,</string>
+    <string name="title_register">注册</string>
+    <string name="verify_code">验证码</string>
+    <string name="verify_code_hint">请输入验证码</string>
+    <string name="agree_treaty" >本人已阅读并同意</string>
+    <string name="award_name">Apple iphone6s 64G 颜色随机</string>
+    <string name="add_list">加入清单</string>
+    <string name="total_demand">总需：%1$d</string>
+    <string name="surplus">剩余：%1$d</string>
+    <string name="friends_login_fb">登录Facebook</string>
+    <string name="friends_no">还没有好友，快去邀请吧！</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="friends_unfold">展开好友</string>
+    <string name="friends_fold">收起好友</string>
+    <string name="cancel">取消</string>
+    <string name="hint_search">搜索你感兴趣的商品</string>
+
+    <string name="history_search">历史搜索</string>
+    <string name="hot_search">热门搜索</string>
+
+    <string name="commodity_detail">商品详情</string>
+    <string name="issue">期号：%1$d</string>
+    <string name="buyNumber">购买人次：%1$d人次</string>
+    <string name="seize_number">夺宝号码：</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="settlement">结算</string>
+    <string name="cart_amount">฿%1$d</string>
+    <string name="cart_amount_text">合计：</string>
+    <string name="cart_surplus">总需：%1$d次，剩余%2$d次</string>
+    <string name="participate_number">参与人数</string>
+    <string name="cart_no_commodity">您的清单暂无商品</string>
+    <string name="explore">随便逛逛</string>
+    <string name="guess_you">猜你喜欢</string>
+    <string name="all_selected">全选</string>
+    <string name="delete">删除</string>
+
+    <string name="check_amount_text">共%1$d件，合计：฿%2$.2f</string>
+
+    <string name="countDownTimer">00:00:00</string>
+    <string name="detail_with_picture">图文详情</string>
+    <string name="detail_with_history_unveil">往期揭晓</string>
+    <string name="detail_with_share">晒单分享</string>
+    <string name="history_user_participate">用户参与记录</string>
+    <string name="history_start">%1$s开始</string>
+    <string name="history_username">站住你别动</string>
+    <string name="history_userIp">(浙江省 IP：26.12.34.21)</string>
+    <string name="history_time">2016&#8211;04&#8211;13 12:38:54</string>
+    <string name="history_userPartCount">参与了%1$d人次</string>
+    <string name="Now_Participate">立即参与</string>
+    <string name="no_participate">您未参与本次夺宝活动哦！</string>
+    <string name="caculate_detail">计算详情</string>
+    <string name="detail_countdown">揭晓倒计时：%1$s</string>
+    <string name="winner">获得者：%1$s</string>
+    <string name="detail_unveil_userId">用户ID：%1$d</string>
+    <string name="detail_unveil_part_count">本期参与：%1$d人次</string>
+    <string name="detail_unveil_time">揭晓时间：%1$s</string>
+    <string name="lucky_number">幸运号码：%1$d</string>
+    <string name="go_latest_issue">立即前往最新期</string>
+    <string name="determine">确定</string>
+    <string name="buy_count">购买人次</string>
+    <string name="messenger">Messenger</string>
+    <string name="twitter">Twitter</string>
+    <string name="copy">拷贝</string>
+
+    <string name="purchase_history">购买记录</string>
+    <string name="prize_history">中奖记录</string>
+    <string name="sun_share">晒单送钻石</string>
+    <string name="get_diamond">我的钻石</string>
+    <string name="recharge_history">充值记录</string>
+    <string name="call_center">客服中心</string>
+
+    <string name="recharge">充值</string>
+    <string name="click_login">点击登录</string>
+    <string name="balance">账户余额</string>
+    <string name="detail_surplus">剩余%1$d人次</string>
+    <string name="friends_id">ID: %1$d</string>
+    <string name="robbing_award">抢单中&#8230;</string>
+    <string name="bask_time">%1$1s</string>
+    <string name="friends_mood">
+        白马饰金羁，连翩西北驰。借问谁家子，幽并游侠儿。
+        少小去乡邑，扬声沙漠垂。宿昔秉良弓，楛矢何参差。
+        控弦破左的，右发摧月支。仰手接飞猱，俯身散马蹄。
+        狡捷过猴猿，勇剽若豹螭。边城多警急，虏骑数迁移。
+        羽檄从北来，厉马登高堤。长驱蹈匈奴，左顾凌鲜卑。
+        弃身锋刃端，性命安可怀？父母且不顾，何言子与妻！
+        名编壮士籍，不得中顾私。捐躯赴国难，视死忽如归！
+    </string>
+    <string name="Im_feeling">试试手气</string>
+    <string name="friends_comment">真的很萌：很幸运</string>
+    <string name="check_detail">查看详情</string>
+    <string name="gobuy">跟买</string>
+    <string name="friends_winner">获得者：%1$s</string>
+    <string name="count_friends">%1$d人次</string>
+    <string name="buy">购买</string>
+    <string name="discover">发现</string>
+    <string name="exit">退出登录</string>
+
+    <string name="setting_notify">通知设置</string>
+    <string name="setting_issue">常见问题</string>
+    <string name="setting_clear">清理缓存</string>
+    <string name="setting_version">版本信息</string>
+    <string name="version">LuckyBuy V%1$s</string>
+
+    <string name="sns_avatar">头像</string>
+    <string name="sns_id">ID</string>
+    <string name="sns_account">账号</string>
+    <string name="sns_nickname">昵称</string>
+    <string name="sns_phone">手机</string>
+    <string name="sns_address">地址管理</string>
+    <string name="sns_id_value">00000000</string>
+    <string name="sns_account_value">Events@Gmail.com</string>
+    <string name="sns_nickname_value">Events</string>
+    <string name="facebook_bind_state">已绑定</string>
+    <string name="add_new_address">添加新地址</string>
+    <string name="address_user_name"> </string>
+    <string name="user_address"> </string>
+    <string name="phone_number">18012562728</string>
+    <string name="set_default_address">设为默认地址</string>
+
+    <string name="address_hint_name">收货人姓名</string>
+    <string name="address_hint_phone">手机号码</string>
+    <string name="address_hint_district">省、市、区</string>
+    <string name="address_hint_street">街道</string>
+    <string name="address_hint_detail">详细地址</string>
+
+    <string name="charge_time">时间</string>
+    <string name="charge_figure">充值金额</string>
+    <string name="charge_state">充值状态</string>
+    <string name="charge_success">成功</string>
+    <string name="charge_fail">失败</string>
+    <string name="charge_certificating">认证中&#8230;</string>
+    <string name="charge_money">100泰铢</string>
+    <string name="confirm_address">确认收货地址</string>
+    <string name="deal_success">交易成功</string>
+    <string name="wait_shipments">等待商品派发&#8230;</string>
+    <string name="confirm">确认</string>
+    <string name="user_other">使用其他</string>
+    <string name="commodity_state">商品状态</string>
+    <string name="obtain_commodity">获得商品</string>
+    <string name="commodity_info">商品信息</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="commodity_distribute">商品派发</string>
+    <string name="bask">晒单</string>
+    <string name="bask_now">立即晒单</string>
+    <string name="bask_look">查看晒单</string>
+    <string name="bask_tip">中奖就要放肆晒，拿晒单红包奖上奖哦！</string>
+    <string name="bask_rule">晒单规则</string>
+    <string name="bask_evaluate_tip">长度不少于30 字</string>
+    <string name="commit_evaluate">提交评价</string>
+    <string name="add_picture">添加图片</string>
+    <string name="commit">提交</string>
+    <string name="commit_indent">提交订单</string>
+
+    <!-- Pay Result Activity-->
+    <string name="pay_result_success">参与夺宝成功</string>
+    <string name="pay_result_fail">参与夺宝失败</string>
+    <string name="wait_result_unveil">请等待系统为您揭晓结果</string>
+    <string name="money_will_back">夺宝金额将返回到您的余额账户</string>
+    <string name="snatch_record">夺宝记录</string>
+    <string name="continue_snatch">继续夺宝</string>
+    <string name="pay_money">成功参与夺宝，付款金额</string>
+    <string name="pay_money_value">%1$.2f泰铢</string>
+    <string name="commodity_name">商品名称</string>
+    <string name="buy_number">购买数量</string>
+    <string name="commodity_issue">商品期号</string>
+    <string name="buy_number_value">%1$d人次</string>
+    <string name="snatch_number">夺宝号码</string>
+
+    <!-- Payment Activity -->
+    <string name="payment_tip_title">订单提交成功，只差最后一步支付就可以啦！</string>
+    <string name="payment_tip_subtitle">请在订单提交后30分钟内完成支付，否则订单自动取消</string>
+    <string name="payment_indent_number">订单号：%1$s</string>
+    <string name="payment">支付方式</string>
+    <string name="payment_other">其它支付方式</string>
+    <string name="payment_immediate">立即支付</string>
+    <string name="payment_alipay">支付宝</string>
+
+    <!-- Reloading -->
+    <string name="reloading_tip">网络出错啦，请点击按钮重新加载</string>
+    <string name="reloading">重新加载</string>
+
+======================New String 6-22================================
+    <string name="check_all">查看全部</string>
+    <string name="photograph">拍照</string>
+    <string name="album">相册</string>
+
+    <string name="surplus_to_pay">还需支付</string>
+    <string name="visa">VISA</string>
+    <string name="paypal">PayPal</string>
+    <string name="line_pay">Line Pay</string>
+    <string name="true_money">True Money</string>
+    <string name="mol">MOL</string>
+    <string name="blue_pay">BluePay</string>
+    <string name="paysbuy_pay">PaysBuy</string>
+    <string name="account_balance">账户余额</string>
+    <string name="available_balance">可用余额：%1$.2f泰铢</string>
+    <string name="currency_unit">泰铢</string>
+    <string name="currency_symbol">฿</string>
+    <string name="balance_lack">余额不足</string>
+
+    <string name="nickname_rule">4~20个字符，可由中英文、数字、_ 、“-”组成</string>
+    <string name="input_new_phone">请输入新手机号</string>
+    <string name="sms_verify_code_hint">请输入短信验证码</string>
+    <string name="charge_money_title">充值金额(泰铢)</string>
+
+    <string name="charge_result_btn">返回夺宝首页</string>
+    <string name="contact_us">联系我们：</string>
+    <string name="line_account">Line:luckybuy</string>
+    <string name="faq">FAQ</string>
+    <string name="email_us">Email Us</string>
+    <string name="facebook_account">Facebook:LuckyBuy</string>
+
+    <string name="setting_language">语言设置</string>
+    <string name="setting_help_center">帮助中心</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_protocol">服务协议</string>
+    <string name="setting_about">关于我们</string>
+
+    <string name="feeback_type_title">请选择反馈类型：</string>
+    <string name="advise">建议</string>
+    <string name="consult">咨询</string>
+    <string name="other">其它</string>
+    <string name="contact_method">联系方式</string>
+    <string name="contact_input_hint">请输入联系方式</string>
+    <string name="feedback_hint">亲，您遇到什么问题啦，或有什么功能建议，欢迎提给我们！</string>
+
+    <string name="buy_record_none_tip">您还没有购买记录</string>
+    <string name="scan_qr_code_tip">扫描二维码，下载LuckyBuy客户端</string>
+    <string name="about_us_bottom_tip">Copyright@2016 DeeDeeFun Inc. All Rights Reserved.</string>
+
+    <string name="language_chinese_simple">中文（简体）</string>
+    <string name="language_english">English</string>
+    <string name="language_tailand">ภาษาไทย</string>
+
+    <string name="update_nickname">修改昵称</string>
+    <string name="update_phone">修改手机号码</string>
+    <string name="send_verify_code_success">发送验证码成功</string>
+
+    ======================New String 7-9================================
+    <string name="select_address">请选择地址</string>
+    <string name="address_default"> </string>
+    <string name="check_update">检查更新</string>
+    <string name="add_success">添加成功</string>
+    <string name="no_login">您还未登录</string>
+
+    <!--AlertDialog Title-->
+    <string name="alertDialog_title">温馨提示</string>
+    <string name="alertDialog_subtitle">确认删除全部历史记录？</string>
+    <string name="bask_dialog_subtitle">确定退出评价晒单？</string>
+    <string name="nickname_dialog_subtitle">确定退出昵称修改？</string>
+    <string name="phone_dialog_subtitle">确定退出手机号修改？</string>
+    <string name="address_dialog_subtitle">确定退出地址编辑？</string>
+
+    <!-- Pay Result-->
+    <string name="pay_result_part_fail">部份商品夺宝失败</string>
+    <string name="pay_result_part_fail_subtitle">%1$d个商品参与失败</string>
+
+    <string name="bask_success">晒单成功</string>
+    <string name="bask_fail">晒单失败</string>
+    <string name="updateInfo_success">修改成功</string>
+    <string name="updateInfo_fail">修改失败</string>
+    <string name="commit_success">提交成功</string>
+    <string name="commit_fail">提交失败</string>
+    <string name="confirm_fail">确认失败</string>
+
+    <!-- Address Edit-->
+    <string name="address_not_complete">请将地址信息填写完整</string>
+    <!-- ConfirmInfo -->
+    <string name="confirm_into_address_tip">请填写收货地址</string>
+    <string name="please_wait">请等待</string>
+
+    <!-- LuckyBuy Unveil -->
+    <string name="count_down_title">揭晓倒计时</string>
+    <string name="unveil_winner">获得用户：%1$s</string>
+    <string name="unveil_participate_count">参与人次：%1$d</string>
+
+    <string name="title_retrieve_pwd">找回密码</string>
+    <string name="title_reset_pwd">重置密码</string>
+    <string name="pwd_input_new_hint">请输入新密码</string>
+    <string name="pwd_confirm_hint">请确认密码</string>
+    <string name="verifyCode_error">验证码错误</string>
+    <string name="pwd_disagree">密码不一致</string>
+    <string name="pwd_length_error">请输入6&#8211;12位密码</string>
+    <string name="phone_length_error">请输入10 或者 11位手机号</string>
+
+    <string name="register_protocol">注册协议</string>
+    <string name="register_protocol_agree">本人已阅读并同意</string>
+    <string name="register_fail">注册失败</string>
+    <string name="login_fail">登录失败</string>
+    <string name="check_all_title">夺宝号码(%1$d人次)</string>
+    <string name="again_buy">再次购买</string>
+    <string name="append">追加</string>
+    <string name="will_unveil">即将揭晓，正在计算，请稍候&#8230;</string>
+
+    <string name="confirm_receipt_fail">确认收货失败</string>
+    <string name="content_shortage">请输入30字以上的评价</string>
+    <string name="charge_method">充值方式</string>
+    <string name="other_money">其它金额</string>
+
+    <string name="no_receipt_address">您还没有收货地址</string>
+    <string name="add_address">去添加地址</string>
+    <string name="no_win_prize_record">您还没有中奖记录</string>
+    <string name="immediate_buy">立即购买</string>
+    <string name="no_bask_record">该用户还没有晒单哦</string>
+    <string name="no_lucky_record">该用户还没有幸运记录哦</string>
+    <string name="no_charge_record">您还没有充值记录</string>
+    <string name="diamond_count">钻石：%1$d</string>
+    <string name="calculating">计算中&#8230;</string>
+    <string name="cart_count_tip">请填写商品数量</string>
+
+    ======================New String 8-12================================
+    <string name="confirm_charge">确认充值</string>
+    <string name="copy_complete">已复制</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="payment_diamond_tip">钻石可以抵现金哦，立即获取钻石</string>
+    <string name="not_available_diamond">无可用钻石</string>
+    <string name="available_diamond">可用%1$d钻石抵 ฿%2$.2f</string>
+    <string name="immediate_use">立即使用</string>
+    <string name="card_number">卡号  %1$2s</string>
+    <string name="card_pwd">密码  %1$2s</string>
+    <string name="win_bulletin">恭喜%1$s5分钟前获得%2$s</string>
+    <string name="win_probability">获奖概率：%1$s</string>
+    <string name="go_latest_issue_2">立即前往</string>
+    <string name="latest_issue_going">新的一期火热进行中</string>
+    <string name="Now_Participate_2">立即夺宝</string>
+    <string name="commend_check_in_wifi">建议在wifi下查看</string>
+    <string name="win_info">中奖信息：</string>
+    <string name="detail_share_content">我在参与LuckyBuy 只要10泰铢就有机会中得商品 %1$s 快来参加吧 %2$s</string>
+    <string name="win_record_share_content">我用10泰铢中了一个商品 %1$s，你也快来参加吧 %2$s</string>
+    <string name="share_success">分享成功</string>
+    <string name="messenger_not_install">请先安装Facebook Messenger客户端</string>
+
+    <!-- version update-->
+    <string name="current_latest_tip">当前是最新版本</string>
+    <string name="obtain_version_exception">获取版本号异常！</string>
+    <string name="obtain_server_version_exception">获取服务器版本号异常！</string>
+    <string name="version_update">版本更新</string>
+    <string name="current_version">当前版本：</string>
+    <string name="server_version">服务器版本：</string>
+    <string name="immediately_update">立即更新</string>
+    <string name="next_update">下次再说</string>
+    <string name="version_info">版本信息</string>
+    <string name="update_thread_exception">获取服务器版本线程异常！</string>
+    <string name="download_error">下载出错！</string>
+    <string name="download_progress">下载进度：</string>
+    ======================New String 8-30================================
+    <string name="quick_register"><u>快速注册</u></string>
+    <string name="charge_success_title">恭喜您，充值成功</string>
+    <string name="charge_success_subtitle">获得%1$d个泰铢</string>
+    <string name="commodity_pull_out_shelves">该商品已下架</string>
+    <string name="select_picture_error">选择图片文件不正确</string>
+
+    ======================New String 9-2================================
+    <string name="diamond_less_than_constant_value">钻石：%1$d (满100可用)</string>
+    <string name="commodity_amount">商品合计</string>
+    <string name="payment_amount_text">合计：฿%1$.2f</string>
+    <string name="no_bask_record_dsc">暂无用户晒单</string>
+    <string name="facebook_no_bind_state">未绑定</string>
+    <string name="facebook_bind">绑定Facebook</string>
+
+    <!-- new charge 9-9-->
+    <string name="dialog_title_happy">Happy</string>
+    <string name="dialog_title_12call">One2Call</string>
+    <string name="dialog_title_SMS">SMS</string>
+    <string name="input_card_no_tip">请输入卡号</string>
+    <string name="input_pwd_tip">请输入密码</string>
+    <string name="paysbuy_money_tip">请选择充值金额（泰铢）</string>
+    <string name="sms_money_tip">确认要支付%1$d泰铢吗？</string>
+    <string name="facebook_share_web">ฉันกำลังเล่น LuckyBuy อยู่ แค่ 10 บาทก็มีโอกาสถูกรางวัล iPhone 7 แล้ว รีบมาลองเล่นด้วยกันสิ</string>
+    <string name="balance_lack_tip">你的余额不足,请充值 ！</string>
+    <string name="login_again">用户信息获取失败，请重新登录</string>
+
+    ======================New String 9-14================================
+    <string name="count_max">已是最大可购买商品数量</string>
+    <string name="pwd_input_tip">请输入至少6位密码</string>
+    <string name="clear_cache_success">缓存清除成功</string>
+    <string name="clear_cache_fail">缓存清除失败</string>
+
+    ======================New String 9-21================================
+    <string name="no_bask_record2">用户还没有晒单哦</string>
+    <string name="pay_money_value2">用余额支付：%1$.2f泰铢</string>
+
+    ======================New String 10-10================================
+    <string name="lottery">开奖进度：%1$s</string>
+    <string name="win_count">中奖次数：%1$d次</string>
+    <string name="win_earnings">中奖总收益：%1$d泰铢</string>
+    <string name="invite_friends_tip">您还没有好友哦，邀请更多好友pk一下</string>
+    <string name="charge_pause_notification">充值暂停使用通知</string>
+    <string name="charge_privilege_activity">充值优惠活动</string>
+    <string name="title_information_center">消息中心</string>
+    <string name="participate_snatch_by_diamond_tip">100钻石可以参与一次夺宝哦</string>
+    <string name="my_mission">我的任务</string>
+    <string name="title_diamond_mission">钻石任务</string>
+
+    ======================New String 10-21================================
+    <string name="logisticsInfo_subtitle">物流信息</string>
+    <string name="logistics_company">物流公司：%1$s</string>
+    <string name="express_number">快递单号：%1$s</string>
+    <string name="mission_introduction">任务说明</string>
+</resources>

@@ -1,0 +1,155 @@
+
+<resources>
+<lang value="th">en</lang>
+  <ek value="ocearStarPay">2_08F959F99904653383FBA247B6EFE02F6314BB75B9918807BBB3D019FA7C2E27</ek>
+  <productId value="100">551</productId>
+  <promotionId value="1000">1001</promotionId>
+  <!-- debug 模式，true走国内测试环境，false走生产环境;
+  在国内测试环境时debug保持true，后面需要上正式环境时，则需要把debug修改为false-->
+  <debug>false</debug>
+  <!--for sms 默认的价格列表该列表的value是*100的，500对应5THB    
+  <price value="500">50THB buy 10 Golden</price> value 的值是价格点，
+  比如：500 == 5THB，对应15个金币,描述信息可以任意修改，只要符合你们游戏；
+  value可以使用使用数字比如500，也可以使用tariffId
+  -->
+  <prices> 
+       <price value="500" default="true">50THB buy 10 Golden</price>
+     	 <price value="9000">15 Golden</price>
+      	<price value="1000">20 Golden</price>
+      	<price value="1900">30 Golden</price>
+     	 <price value="2000">50 Golden</price>
+     	 <price value="25000">60 Golden</price>
+		 
+      <!-- 这些value值是tariffId,需要贵司在best平台上创建计费id并替换
+      <price value="tdty0hcv" default="true">10 Golden</price>
+      <price value="te1pm7a4">15 Golden</price>
+      <price value="trx4n15j">20 Golden</price>
+      <price value="trqd7sf0">30  Golden</price>
+      <price value="tpu3opa8">50 Golden</price>
+      <price value="t3cyhk32">100 Golden</price>
+      -->
+  </prices>
+  
+  <!-- price's list for bank。（可以使用tarrifId，但是不建议）  200 thb。最小 price.200 thb 可以购买2000金币  -->
+ <prices-bankcharge> 
+      <price value="10000">2000 Golden</price>
+      <price value="20000">2500 Golden</price>
+      <price value="30000">3000 Golden</price>
+      <price value="40000">3500 Golden</price>
+      <price value="50000">4000 Golden</price>
+      <price value="60000">4500 Golden</price>
+  </prices-bankcharge>
+
+  <!-- for line   没有最高和最低价格点限制,价格可以随意填写，
+  例子<price value="10000">2000 Golden</price>  10000 代表 100THB 可以购买2000 Golden 
+  （可以使用tarrifId，但是不建议）
+  -->
+   <prices-line> 
+      <price value="10000">2000 Golden</price>
+      <price value="20000">2500 Golden</price>
+      <price value="30000">3000 Golden</price>
+      <price value="40000">3500 Golden</price>
+      <price value="50000">4000 Golden</price>
+      <price value="55000">4500 Golden</price>
+  </prices-line>
+  <!-- 一下列表都是为payByUI 所使用，如果你不使用这个接口，则不需要修改下面的信息，当然，可以删除掉 -->
+ <!-- truemoney 的所有面额；例子：<price value="5000">500 Golden</price>   5000 代表 50THB，可以购买500 Golden-->
+  <prices-truemoney>
+		<price value="5000">500 Golden</price>
+		<price value="9000">900 Golden</price>
+		<price value="15000">1500 Golden</price>
+		<price value="30000">3000 Golden</price>
+		<price value="50000">5000 Golden</price>
+		<price value="100000">10000 Golden</price>
+  </prices-truemoney>
+<!-- 12call 的所有面额；例子：<price value="5000">500 Golden</price>   5000 代表 50THB，可以购买500 Golden-->
+<prices-12call>
+		<price value="5000">500 Golden</price>
+		<price value="10000">1000 Golden</price>
+		<price value="30000">3000 Golden</price>
+		<price value="50000">5000 Golden</price>
+		<price value="100000">10000 Golden</price>
+  </prices-12call> 
+<!-- happy 的所有面额；例子：<price value="5000">500 Golden</price>   6000 代表 60THB，可以购买600 Golden-->
+   <prices-happy>
+		<price value="6000">600 Golden</price>
+		<price value="10000">1000 Golden</price>
+		<price value="20000">2000 Golden</price>
+		<price value="30000">3000 Golden</price>
+		<price value="50000">5000 Golden</price>
+  </prices-happy>
+  
+  <!-- viettel 的所有面额；例子：<price value="10000">500 Golden</price>   10000 代表 10000 VND，可以购买100 Golden-->
+   <prices-viettel>
+		<price value="10000">100 Golden</price>
+		<price value="20000">200 Golden</price>
+		<price value="30000">300 Golden</price>
+		<price value="50000">500 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="200000">2000 Golden</price>
+		<price value="500000">5000 Golden</price>
+  </prices-viettel>
+  <!-- mobifone 的所有面额；例子：<price value="10000">500 Golden</price>   10000 代表 10000 VND，可以购买100 Golden-->
+  <prices-mobifone>
+		<price value="10000">100 Golden</price>
+		<price value="20000">200 Golden</price>
+		<price value="30000">300 Golden</price>
+		<price value="50000">500 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="200000">2000 Golden</price>
+		<price value="500000">5000 Golden</price>
+  </prices-mobifone>
+  <!-- vinaphone 的所有面额；例子：<price value="10000">100 Golden</price>   10000 代表 10000 VND，可以购买100 Golden-->
+  <prices-vinaphone>
+		<price value="10000">100 Golden</price>
+		<price value="20000">200 Golden</price>
+		<price value="30000">300 Golden</price>
+		<price value="50000">500 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="200000">2000 Golden</price>
+		<price value="500000">5000 Golden</price>
+  </prices-vinaphone>
+  <!-- vtc 的所有面额；例子：<price value="10000">100 Golden</price>   10000 代表 10000 VND，可以购买100 Golden-->
+  <prices-vtc>
+		<price value="10000">100 Golden</price>
+		<price value="20000">200 Golden</price>
+		<price value="50000">500 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="200000">2000 Golden</price>
+		<price value="300000">3000 Golden</price>
+		<price value="500000">5000 Golden</price>
+  </prices-vtc>
+     <!-- telkomsel 的所有面额；例子：<price value="5000">50 Golden</price>   5000 代表 5000 IDR，可以购买50 Golden-->
+  <prices-telkomsel>
+		<price value="5000">50 Golden</price>
+		<price value="10000">100 Golden</price>
+		<price value="25000">250 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="250000">2500 Golden</price>
+		<price value="500000">5000 Golden</price>
+	
+  </prices-telkomsel>
+  
+      <!-- unipin 的所有面额；例子：<price value="10000">10 Golden</price>   10000 代表 10000 IDR，可以购买10 Golden-->
+  <prices-unipin>
+		<price value="10000">10 Golden</price>
+		<price value="20000">20 Golden</price>
+		<price value="50000">50 Golden</price>
+		<price value="100000">100 Golden</price>
+		<price value="200000">200 Golden</price>
+		<price value="300000">300 Golden</price>
+		<price value="500000">500 Golden</price>
+		<price value="2000000">2000 Golden</price>
+  </prices-unipin>
+  
+  
+      <!-- indomg 的所有面额；例子：<price value="20000">20 Golden</price>   20000 代表 20000 IDR，可以购买200 Golden-->
+  <prices-indomog>
+		<price value="20000">200 Golden</price>
+		<price value="50000">500 Golden</price>
+		<price value="100000">1000 Golden</price>
+		<price value="200000">2000 Golden</price>		
+		<price value="500000">5000 Golden</price>
+  </prices-indomog>
+
+</resources>

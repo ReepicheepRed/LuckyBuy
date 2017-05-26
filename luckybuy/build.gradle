@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.luckybuy"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 94
+        versionName "1.6.15"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "wjKPdT3LyE9eoUBGzboasA",
+                GETUI_APP_KEY : "ATkzoQMgzHAbVTkBDv6Ao",
+                GETUI_APP_SECRET : "MUq9SFn8nl7eRSOHRJ54w2",
+                PACKAGE_NAME : applicationId
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/org.twitter4j/twitter4j-core/pom.xml'
+        exclude 'META-INF/maven/org.twitter4j/twitter4j-core/pom.properties'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                /*output.outputFile = new File(outputFile.parent, "LuckyBuy-app-${variant.name}.apk")*/
+                output.outputFile = new File(outputFile.parent, "LuckyBuy_${defaultConfig.versionCode}_v${defaultConfig.versionName}_${buildType.name}.apk");
+            }
+        }
+    }
+
+
+    productFlavors {
+        //general
+        //partner
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.0.1'
+}
+
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:25.3.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'org.xutils:xutils:3.3.34'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.alibaba:fastjson:1.1.45.android'
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/commons-collections-3.1.jar')
+    compile 'com.google.android.gms:play-services-appindexing:9.2.0'
+    compile project(':library')
+    //umeng_share
+    //compile files('libs/mta-sdk-1.6.2.jar')
+    //compile files('libs/SocialSDK_twitter.jar')
+    //compile files('libs/twitter4j-core-4.0.4.jar')
+    //compile files('libs/umeng_social_sdk.jar')
+    //compile files('libs/volley.jar')
+    //facebook
+    compile('com.facebook.android:facebook-android-sdk:[4,5)') {
+        exclude group: 'com.parse.bolts',
+                module: 'bolts-tasks'
+        exclude group: 'com.parse.bolts',
+                module: 'bolts-applinks';
+    }
+    // ge tui
+    compile 'com.getui:sdk:2.9.0.0'
+    //PayPal
+    if (parent != null) {
+        //generalCompile project(path: ':androidSDK', configuration: 'generalDebug')
+        //partnerCompile project(path: ':androidSDK', configuration: 'partnerDebug')
+    } else {
+
+    }
+    compile 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+    compile 'com.google.android.gms:play-services-wallet:9.2.0'
+    testCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    //androidTestCompile 'com.github.lkorth:device-automator:30238040d8'
+    testCompile 'com.google.dexmaker:dexmaker-mockito:1.1'
+    testCompile 'com.android.support.test.espresso:espresso-intents:2.2.1'
+    testCompile 'com.android.support.test.espresso:espresso-web:2.2.1'
+    testCompile 'com.android.support.test:runner:0.4.1'
+    testCompile 'com.android.support.test:rules:0.4.1'
+    //BluePay
+    compile(name: 'BluePay_3.8.0.1123_pro', ext: 'aar')
+    //sharesdk
+    // sms verify
+    compile name: 'SMSSDK-2.1.0', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.0', ext: 'aar'
+    // share
+    compile files('libs/MobCommons-2016.0811.1207.jar')
+    compile files('libs/MobTools-2016.0811.1207.jar')
+    compile files('libs/ShareSDK-Core-2.7.5.jar')
+    compile files('libs/ShareSDK-Facebook-2.7.5.jar')
+    compile files('libs/ShareSDK-FacebookMessenger-2.7.5.jar')
+    compile files('libs/ShareSDK-Twitter-2.7.5.jar')
+    //talking data analytics
+    compile files('libs/TalkingData_Analytics_Android_SDK_GP.jar')
+    //adjust
+    compile project(':adjust')
+    compile 'com.google.android.gms:play-services-analytics:9.2.1'
+    //mol pay
+    compile files('libs/json-simple-1.1.1.jar')
+    compile files('libs/MOLThailandDirect_1_3_1.jar')
+}

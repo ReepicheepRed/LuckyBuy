@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/not_involved_in_bg"
+    android:id="@+id/detail_tip_ll"
+    tools:context="com.luckybuy.MainActivity"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_participate"
+        android:id="@+id/tip_no_login_or_part"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="@dimen/gap_10_s"
+        android:paddingBottom="@dimen/gap_10_s" />
+</LinearLayout>

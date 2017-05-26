@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/view_166_s"
+    android:visibility="gone"
+    tools:context="com.luckybuy.MainActivity"
+    tools:visibility="visible"
+    android:id="@+id/loading_fail_rl">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView40"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/lianwangshibai_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reloading_tip"
+            android:id="@+id/textView53"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/gap_25_s"
+            android:textSize="@dimen/text_13_s"
+            android:textColor="@color/text_9_c"
+            android:paddingBottom="@dimen/gap_20_s" />
+
+        <Button
+            android:layout_width="@dimen/view_160_s"
+            android:layout_height="@dimen/view_39_s"
+            android:text="@string/reloading"
+            android:id="@+id/reloading_btn"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/reload_btn"
+            android:textColor="@color/text_6_c"
+            android:textSize="@dimen/text_15_s" />
+    </LinearLayout>
+</RelativeLayout>

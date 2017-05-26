@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_msisdn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Silahkan masukan nomor telepon anda" >
+
+        <requestFocus android:layout_width="wrap_content" />
+    </EditText>
+
+
+    <RadioGroup
+        android:id="@+id/rg_pay_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_msisdn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn_otc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:text="OTC" />
+
+        <RadioButton
+            android:id="@+id/rbtn_atm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="ATM" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pay_channel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textColor="#FF0000" />
+
+</RelativeLayout>

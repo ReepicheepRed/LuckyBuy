@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">LuckyBuyAssistant</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="nav_name">
+        <item>机器人</item>
+        <item>设置中奖</item>
+        <item>晒单</item>
+        <item>设置</item>
+    </string-array>
+
+    <string name="user_number">用户数量：%1$d</string>
+    <string name="commodity_number">商品数量：%1$d</string>
+    <string name="initiate">启动</string>
+    <string name="pause">暂停</string>
+    <string name="participate_log">参与日志：</string>
+    <string name="send_log">发送日志</string>
+
+    <string name="user_number_selected">已选择用户数量：%1$d</string>
+    <string name="commodity_number_selected">已选择商品数量：%1$d</string>
+    <string name="immediately_complete">立即选择</string>
+    <string name="random">随机选择用户参与</string>
+    <string name="sequence">按顺序依次参与</string>
+    <string name="time_interval">依次参与夺宝时间间隔：</string>
+    <string name="robot_work_time">机器人工作时间：</string>
+    <string name="setting_complete">设置完成</string>
+    <string name="back">返回</string>
+
+    <string name="user_number_virtual">虚拟用户总数：%1$d</string>
+    <string name="user_unengaged">空闲用户：%1$d</string>
+    <string name="refresh">刷新</string>
+    <string name="big_buyer">大买家：%1$d</string>
+    <string name="mediate_buyer">中级买家：%1$d</string>
+    <string name="small_buyer">小买家：%1$d</string>
+    <string name="expense_500">单次消费500以上</string>
+    <string name="expense_200">单次消费200&#8211;500</string>
+    <string name="expense_10">单次消费10&#8211;200</string>
+
+    <string name="select_virtual_user">请选择你的虚拟用户</string>
+    <string name="select_smart">智能选择</string>
+    <string name="big_buyer_s">大买家(%1$d)</string>
+    <string name="mediate_buyer_s">中级买家(%1$d)</string>
+    <string name="small_buyer_s">小买家(%1$d)</string>
+    <string name="password">密码：%1$d</string>
+    <string name="balance">余额：%1$d</string>
+
+    <string name="commodity_selected">已选择商品</string>
+    <string name="commodity_good_id">商品号：%1$d</string>
+    <string name="commodity_total">总需：%1$d</string>
+    <string name="commodity_single_price">单价：%1$d</string>
+
+    <string name="user_selected">用户选择</string>
+    <string name="not_bask">还未晒单</string>
+    <string name="already_bask">已经晒单</string>
+
+    <string name="issue">期号：%1$d</string>
+    <string name="buy_count">购买数量：%1$d次</string>
+    <string name="win_user">中奖用户：%1$s</string>
+    <string name="user_id">用户ID：%1$d</string>
+    <string name="immediate_bask">立即晒单</string>
+    <string name="waiting_check">已经晒单待审核</string>
+
+</resources>

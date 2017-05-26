@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bask_general_ll">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover_avatar_iv"
+            android:src="@mipmap/faxian_gerenzhongxin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="@dimen/gap_10_s" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/discover_avatar_iv"
+            android:layout_toEndOf="@+id/discover_avatar_iv"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_username"
+                android:id="@+id/discover_user_name"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bask_time"
+                android:id="@+id/discover_time_tv"
+                android:textSize="@dimen/text_11_s"
+                android:textColor="@color/text_9_c"
+                android:paddingTop="@dimen/gap_10_s" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_70_s"
+        android:padding="@dimen/gap_9_s"
+        android:background="@color/view_f1_c"
+        android:layout_marginTop="@dimen/gap_11_s"
+        android:layout_marginBottom="@dimen/gap_13_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/win_info"
+            android:id="@+id/textView42"
+            android:textSize="@dimen/text_13_s"
+            android:textColor="@color/text_9_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover_award_name_tv"
+            android:textSize="@dimen/text_13_s"
+            android:textColor="@color/text_9_c"
+            android:text="@string/award_name"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/issue"
+            android:id="@+id/discover_award_issue_tv"
+            android:textSize="@dimen/text_13_s"
+            android:textColor="@color/text_9_c" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/friends_mood"
+        android:id="@+id/discover_content_tv"
+        android:textColor="@color/text_6_c"
+        android:textSize="@dimen/gap_13_s"
+        android:lineSpacingExtra="@dimen/gap_7_s"
+        android:maxLines="4"
+        android:ellipsize="end"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discover_picture_gv"
+        android:paddingTop="@dimen/gap_10_s"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/gap_3_s" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s"
+    android:background="@android:color/white"
+    android:id="@+id/balance_rl">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_money_value"
+        android:id="@+id/pay_amount_tv"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/gap_10_s"
+        android:textSize="@dimen/text_15_s"
+        android:textColor="@color/light_red"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commodity_amount"
+        android:id="@+id/textView44"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s" />
+
+</RelativeLayout>

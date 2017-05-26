@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:paddingRight="@dimen/gap_10_s"
+    android:paddingTop="@dimen/gap_15_s"
+    android:paddingBottom="@dimen/gap_15_s"
+    android:background="@android:color/white">
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/commodity_detail_progress"
+        android:layout_gravity="center_horizontal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/commodity_detail_countdown"
+        android:layout_gravity="center_horizontal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_130_s"
+        layout="@layout/commodity_detail_unveil"
+        android:layout_gravity="center_horizontal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/commodity_detail_number"
+        android:layout_gravity="center_horizontal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/commodity_detail_no_login_or_participate"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/gap_10_s" />
+</LinearLayout>

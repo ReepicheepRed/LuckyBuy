@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/gap_15_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feeback_type_title"
+            android:id="@+id/textView26"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c"
+            android:paddingTop="@dimen/gap_12_s" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/gap_15_s"
+            android:layout_marginBottom="@dimen/gap_12_s">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/advise"
+                android:id="@+id/radioButton"
+                android:checked="false"
+                android:paddingRight="@dimen/view_40_dp"
+                android:paddingLeft="@dimen/gap_6_s"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:button="@drawable/background_feedback_radiobtn"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consult"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:paddingRight="@dimen/view_40_dp"
+                android:paddingLeft="@dimen/gap_6_s"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:button="@drawable/background_feedback_radiobtn" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:id="@+id/radioButton3"
+                android:checked="false"
+                android:paddingLeft="@dimen/gap_6_s"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:button="@drawable/background_feedback_radiobtn" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_45_s">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/contact_method"
+                android:id="@+id/textView65"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_15_s"
+                android:textColor="@color/text_3_c"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/feedback_phone"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/contact_input_hint"
+                android:textColorHint="@color/hint_c"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_15_s"
+                android:background="@null"
+                android:paddingLeft="@dimen/gap_15_s" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_315_s"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/gap_10_s"
+        android:paddingTop="@dimen/gap_13_s"
+        android:paddingBottom="@dimen/gap_13_s"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/feedback_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:maxLines="5"
+            android:layout_above="@+id/feedback_gv"
+            android:background="@null"
+            android:textSize="@dimen/text_14_s"
+            android:textColorHint="@color/hint_c"
+            android:hint="@string/feedback_hint"
+            android:gravity="top"
+            android:lineSpacingExtra="@dimen/gap_8_s"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_75_s"
+            android:id="@+id/feedback_gv"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/bask_wvaluate_et"
+            android:layout_alignStart="@+id/bask_wvaluate_et"
+            android:numColumns="4"
+            android:horizontalSpacing="@dimen/gap_8_s"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height_s"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:background="@color/bg_f9_c"
+    android:id="@+id/detail_actionbar_rl"
+    tools:context="com.luckybuy.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_back_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/nav_back_icon_2x"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_share_ib"
+        android:src="@mipmap/nav_share_icon"
+        android:paddingRight="@dimen/gap_10_s"
+        android:layout_toLeftOf="@+id/detail_cart_iv"
+        android:layout_toStartOf="@+id/detail_cart_iv"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/gap_10_s" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_cart_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/nav_inventory_icon"
+        android:paddingRight="@dimen/gap_15_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commodity_detail"
+        android:id="@+id/textView12"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/title_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view" />
+
+    <com.luckybuy.layout.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/detail_cart_amount"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/gap_8_s"
+        android:layout_marginRight="@dimen/gap_8_s"
+        android:textSize="@dimen/text_12_s"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</RelativeLayout>

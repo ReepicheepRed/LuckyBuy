@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/payment_actionbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/payment_actionbar"
+        android:layout_above="@+id/payment_diamond_ll">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_80_s"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/order_details_bg"
+                android:paddingTop="@dimen/gap_20_s"
+                android:paddingBottom="@dimen/gap_20_s">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_tip_title"
+                    android:id="@+id/textView51"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_13_s" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_tip_subtitle"
+                    android:id="@+id/textView52"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/text_11_s"
+                    android:textColor="@color/text_6_c"
+                    android:paddingTop="@dimen/gap_8_s" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_indent_number"
+                android:id="@+id/payment_indent_number_tv"
+                android:paddingLeft="@dimen/gap_15_s"
+                android:textSize="@dimen/text_11_s"
+                android:textColor="@color/text_9_c"
+                android:paddingTop="@dimen/gap_10_s"
+                android:paddingBottom="@dimen/view_26_s" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_height_primary_s"
+                layout="@layout/payment_amount"
+                android:layout_gravity="center_horizontal" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_height_primary_s"
+                layout="@layout/payment_balance"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap_10_s" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/payment_diamond" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/payment_type"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap_15_s" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        layout="@layout/payment_bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/payment_bottom_rl" />
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:paddingRight="@dimen/gap_10_s">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_20_s"
+        android:layout_marginTop="@dimen/gap_20_s">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:text="@string/user_number_virtual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uSelect_total_tv"
+                android:layout_marginBottom="@dimen/gap_10_s" />
+
+            <TextView
+                android:text="@string/user_unengaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uSelect_unengaged_tv" />
+        </LinearLayout>
+
+        <Button
+            android:text="@string/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/uSelect_refresh_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_10_s">
+
+        <TextView
+            android:text="@string/big_buyer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_big_buyer_tv"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/expense_500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_10_s">
+
+        <TextView
+            android:text="@string/mediate_buyer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_med_buyer_tv"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/expense_200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView151"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/small_buyer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_sma_buyer_tv"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/expense_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView152"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_20_s"
+        android:layout_marginBottom="@dimen/gap_10_s">
+
+        <TextView
+            android:text="@string/select_virtual_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/select_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_smart_btn"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_10_s">
+
+        <TextView
+            android:text="@string/big_buyer_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_big_buyerS_tv"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:text="@string/mediate_buyer_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_med_buyerM_tv"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:text="@string/small_buyer_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uSelect_sma_buyerS_tv"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_lv" />
+</LinearLayout>

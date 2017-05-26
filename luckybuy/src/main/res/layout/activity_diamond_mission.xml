@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/_dm_bg"
+        android:paddingTop="@dimen/gap_19_s">
+
+        <TextView
+            android:text="@string/get_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:background="@mipmap/wodezuanshi_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/gap_25_s" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mission_diamond_num_tv"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_27_s"
+            android:paddingBottom="@dimen/gap_10_s"
+            android:paddingTop="@dimen/gap_15_s" />
+
+        <TextView
+            android:text="@string/participate_snatch_by_diamond_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mission_snatch_tip_tv"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/my_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView66"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/_biaotizuanshi_zuo"
+        android:drawableRight="@mipmap/_biaotizuanshi_you"
+        android:drawablePadding="@dimen/gap_7_s"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/gap_17_dp"
+        android:paddingTop="@dimen/gap_20_s"
+        android:gravity="center" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:id="@+id/mission_gv" />
+
+</LinearLayout>

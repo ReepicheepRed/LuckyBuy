@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="300sp"
+    android:layout_height="220sp"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/bluepay_logo" />
+    
+    <TextView android:id="@+id/Bluep_payTip"
+         android:layout_width="250sp"
+         android:layout_height="40sp"
+         android:paddingRight="5sp"
+         android:layout_marginTop="5sp"
+         android:textColor="#ff000000"
+         android:textSize="14sp"
+         android:gravity="center"/>
+    
+    <Button android:id="@+id/Bluep_payList"
+         android:layout_width="250sp"
+         android:layout_height="40sp"
+         android:paddingRight="5sp"
+         android:layout_marginTop="5sp"
+         android:textColor="#ff000000"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:background="@drawable/bluep_paylist_bg" 
+         android:drawableRight="@drawable/bluep_paylist_arrow_selector"/>
+ 
+    <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="15sp"
+     android:layout_marginBottom="5sp" >
+     
+     
+     <Button android:id="@+id/Bluep_paybyYes"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30sp"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         
+         android:text="Ok"
+         android:textColor="#ffffffff"
+         android:background="@drawable/bluep_btnbg_selector" />
+     
+     <Button
+         android:id="@+id/Bluep_paybyNo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="30sp"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:text="Cancel"
+         android:textColor="#ffffffff"
+         android:background="@drawable/bluep_btnbg_selector" />
+     
+ </RelativeLayout>
+         
+</LinearLayout>

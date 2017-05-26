@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_keyword_ll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/gap_15_s">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView41"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/popular_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/hot_search"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView41"
+            android:layout_toEndOf="@+id/imageView41"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_12_s"
+            android:paddingLeft="@dimen/gap_7_s" />
+    </RelativeLayout>
+
+<!--    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_60_s"
+        android:id="@+id/hot_gv"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="5"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s" />-->
+
+    <com.luckybuy.layout.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_55_s"
+        android:id="@+id/hot_gv"
+        android:layout_marginLeft="@dimen/gap_15_s" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:id="@+id/search_record_rl"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_41"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/content_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/history_search"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_41"
+            android:layout_toEndOf="@+id/imageView_41"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_12_s"
+            android:paddingLeft="@dimen/gap_7_s" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_clear_history_iv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/delete_icon"
+            android:padding="@dimen/gap_15_s" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/search_clear_history_iv" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/history_gv"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:numColumns="5"
+        android:verticalSpacing="@dimen/gap_10_s"
+        android:background="@android:color/white" />
+
+
+</LinearLayout>

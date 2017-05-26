@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:background="@android:color/white"
+android:paddingLeft="@dimen/gap_15_s">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_40_dp"
+    android:text="@string/commodity_info"
+    android:id="@+id/textView56"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/text_15_s"
+    android:textColor="@color/text_3_c" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/divider_h_s"
+    android:background="@color/divider_c"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_136_s"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_icon_iv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/commodity_image_120"
+        android:paddingTop="@dimen/gap_19_s" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/confirm_icon_iv"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/gap_10_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/award_name"
+            android:id="@+id/confirm_name"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c"
+            android:lineSpacingExtra="@dimen/gap_6_s"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_demand"
+            android:id="@+id/confirm_demand_tv"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_12_s"
+            android:paddingTop="@dimen/gap_5_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/issue"
+            android:id="@+id/confirm_issue"
+            android:textSize="@dimen/text_12_s"
+            android:textColor="@color/text_9_c"
+            android:paddingTop="@dimen/gap_5_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lucky_number"
+            android:id="@+id/confirm_number_tv"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_12_s"
+            android:paddingTop="@dimen/gap_5_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_unveil_time"
+            android:id="@+id/confirm_unveil_time_tv"
+            android:textSize="@dimen/text_12_s"
+            android:textColor="@color/text_9_c"
+            android:paddingTop="@dimen/gap_5_s" />
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

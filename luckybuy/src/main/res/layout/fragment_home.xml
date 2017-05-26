@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/navigation_bar_height_s">
+    <include
+        android:id="@+id/actionbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/actionbar_home"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar_home"
+        android:id="@+id/pull_refresh_scrollview"
+        android:fillViewport="false"
+        android:background="@color/ground_c"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                layout="@layout/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height_s" />
+
+            <include
+                layout="@layout/bulletin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bulletin_height_s" />
+
+            <include
+                layout="@layout/tabs_home_award"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_10_s" />
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="@dimen/gap_10_s"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="@dimen/view_60_s"
+        android:layout_height="@dimen/view_60_s"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/bask_iv"
+        android:layout_margin="@dimen/gap_10_s" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bask_iv"
+        android:layout_toRightOf="@+id/bask_iv"
+        android:layout_toEndOf="@+id/bask_iv">
+
+        <TextView
+            android:text="                         "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bask_title"
+            android:layout_marginBottom="@dimen/gap_10_s"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:text="@string/issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bask_issue"
+            android:layout_marginBottom="@dimen/gap_10_s" />
+
+        <TextView
+            android:text="@string/buy_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bask_count" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bask_iv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:padding="@dimen/gap_10_s">
+
+        <TextView
+            android:text="@string/win_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bask_win_user"
+            android:layout_marginBottom="@dimen/gap_10_s" />
+
+        <TextView
+            android:text="@string/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bask_user_id" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/immediate_bask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:id="@+id/bask_btn"
+        android:focusable="false"/>
+</RelativeLayout>

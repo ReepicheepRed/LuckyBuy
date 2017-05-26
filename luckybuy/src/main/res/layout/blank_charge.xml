@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/ground_c"
+    android:id="@+id/blank_charge_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wuchongzhijilu_icon_2x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_charge_record"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/imageView19"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_14_s"
+        android:paddingTop="@dimen/gap_25_s" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assistant/Assistant.iml" filepath="$PROJECT_DIR$/Assistant/Assistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LuckyBuy.iml" filepath="$PROJECT_DIR$/LuckyBuy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adjust/adjust.iml" filepath="$PROJECT_DIR$/adjust/adjust.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luckybuy/luckybuy.iml" filepath="$PROJECT_DIR$/luckybuy/luckybuy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>

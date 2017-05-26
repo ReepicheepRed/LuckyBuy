@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="300sp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:id="@+id/payByPortrait"
+        android:layout_width="fill_parent"
+        android:layout_height="400sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50sp" >
+
+            <ImageView
+                android:id="@+id/headerLogo"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/bluepay_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:paddingTop="5sp" >
+
+            <ImageView
+                android:id="@+id/tipIv"
+                android:layout_width="200sp"
+                android:layout_height="100sp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bluep_logo_12call" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tipIv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="Please Input your Card No."
+                    android:textSize="20px"
+                    android:visibility="gone" />
+
+                <!--
+                    android:inputType="number"
+		            android:numeric="integer"
+                -->
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tipIv"
+                    android:layout_alignTop="@+id/linearLayout1" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/Bluep_payCardNoTip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Card No."
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/payEdit"
+                            android:layout_width="240sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bluep_input_bg"
+                            android:ems="10"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left"
+                            android:visibility="visible"
+                            android:hint="Please Input your Card No."
+                            android:padding="10sp"
+                            
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" >
+                        </EditText>
+
+                        <LinearLayout
+                            android:id="@+id/rl_serialNo_for_unipin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone" >
+
+                            <EditText
+                                android:id="@+id/et_Seral_first"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="0000"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" >
+
+                                <requestFocus />
+                            </EditText>
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="999"
+                                
+                                android:gravity="center"
+                                android:text=" - "
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/et_Seral_second"
+                                android:layout_width="70sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="number"
+                                android:layout_weight="999"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="1111"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="999"
+                                android:gravity="center"
+                                android:text=" - "
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/et_Seral_third"
+                                android:layout_width="70sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="999"
+                                android:inputType="number"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="2222"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="10sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="999"
+                                android:gravity="center"
+                                android:text=" - "
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/et_Seral_fourth"
+                                android:layout_width="58dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="3333"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/Bluep_paySerialNoTip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:singleLine="true"
+                            android:text="Serial No."
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/Bluep_paySerialNoEdit"
+                            android:layout_width="240sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bluep_input_bg"
+                            android:ems="10"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left"
+                            android:hint="Please Input your serial No."
+                            android:padding="10sp"
+                            android:singleLine="true"
+                            android:textColor="#ff000000"
+                            android:textSize="18sp" >
+                        </EditText>
+
+                        <LinearLayout
+                            android:id="@+id/rl_CardNo_for_unipin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:layout_weight="1"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="IDMB - "
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/et_unipin_first_input"
+                                android:layout_width="30sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="1"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="40sp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="- S -"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/et_unipin_last_input"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bluep_input_bg"
+                                android:ems="10"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="00000000"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#ff000000"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/payTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="0.4"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#ffff0000"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="0.6" >
+
+            <Button
+                android:id="@+id/paybyYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30sp"
+                android:background="@drawable/bluep_btnbg_selector"
+                android:text="Ok"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/paybyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/bluep_btnbg_selector"
+                android:text="Cancel"
+                android:textColor="#ffffffff" />
+
+            <!--
+            <ImageButton
+	            android:id="@+id/paybyYes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="5sp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/g_yes_selector"
+	            android:background="@drawable/g_btnbg_selector" />
+	
+	        <ImageButton
+	            android:id="@+id/paybyNo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="5sp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/g_no_selector"
+	            android:background="@null" />
+            -->
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
+            android:layout_marginTop="5sp"
+            android:background="#55000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtView_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.luckybuy.MainActivity"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/gap_12_s"
+    android:background="@color/ground_c"
+    android:gravity="center_vertical"
+    android:id="@+id/unfold_list_ll"
+    android:visibility="visible"
+    tools:visibility="visible"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:text="@string/tabs_home_friends"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_12_s"
+        android:paddingBottom="@dimen/gap_11_s"
+        android:paddingLeft="@dimen/gap_15_s" />
+
+    <com.luckybuy.layout.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_34_s"
+        android:id="@+id/friends_hlv"
+        android:layout_marginLeft="@dimen/gap_15_s" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/gap_13_s"
+        android:id="@+id/fold_btn_ll"
+        android:paddingBottom="@dimen/gap_13_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_fold"
+            android:id="@+id/textView9"
+            android:textColor="@color/text_6_c"
+            android:textSize="@dimen/text_12_s"
+            android:paddingRight="@dimen/gap_3_s" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView11"
+            android:src="@mipmap/fold_arrow2x" />
+    </LinearLayout>
+
+</LinearLayout>

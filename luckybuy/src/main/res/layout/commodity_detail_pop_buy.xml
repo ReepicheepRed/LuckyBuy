@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_semtransparent_50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_156_s"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buy_commodity_rl">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="@dimen/gap_15_s">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_minus_ib"
+                android:src="@mipmap/jian_icon"
+                android:background="@null" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_single_num"
+                android:background="@mipmap/shuliangxuanzekuang_zhongjiang"
+                android:gravity="center"
+                android:textSize="@dimen/text_15_s"
+                android:textColor="@android:color/black"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="6"
+                android:text="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_plus_ib"
+                android:src="@mipmap/jia_icon"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_count"
+            android:id="@+id/textView25"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_16_s"
+            android:paddingLeft="@dimen/gap_15_s" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/determine"
+            android:id="@+id/determine_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:background="@color/light_red"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16_s"
+            android:layout_marginTop="@dimen/gap_25_s" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/determine_btn"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/gap_25_s"
+            android:id="@+id/linearLayout3"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_25_s"
+                android:text="10"
+                android:id="@+id/num1"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/gap_21_s"
+                android:textSize="@dimen/text_14_s"
+                android:textColor="@color/text_3_c"
+                android:background="@drawable/background_detail_buy_btn" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_25_s"
+                android:text="20"
+                android:id="@+id/num2"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/gap_21_s"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_14_s"
+                android:background="@drawable/background_detail_buy_btn" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_25_s"
+                android:text="50"
+                android:id="@+id/num3"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_14_s"
+                android:textColor="@color/text_3_c"
+                android:layout_marginRight="@dimen/gap_21_s"
+                android:background="@drawable/background_detail_buy_btn" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_25_s"
+                android:text="100"
+                android:id="@+id/num4"
+                android:layout_weight="1"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_14_s"
+                android:background="@drawable/background_detail_buy_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

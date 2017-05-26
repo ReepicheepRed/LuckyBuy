@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/ground_c"
+    android:id="@+id/blank_win_prize_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/gerenwuduobaojilu_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_win_prize_record"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/imageView19"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_14_s"
+        android:paddingTop="@dimen/gap_25_s" />
+
+    <Button
+        android:layout_width="@dimen/view_160_s"
+        android:layout_height="@dimen/view_39_s"
+        android:text="@string/immediate_buy"
+        android:id="@+id/win_go_buy_btn"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_button"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/gap_20_s"
+        android:textSize="@dimen/text_16_s" />
+</RelativeLayout>

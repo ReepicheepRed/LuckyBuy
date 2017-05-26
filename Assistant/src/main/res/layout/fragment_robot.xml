@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:paddingRight="@dimen/gap_10_s">
+
+    <TextView
+        android:text="@string/user_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/robot_userNum_tv"
+        android:layout_marginTop="@dimen/gap_20_s"
+        android:layout_marginBottom="@dimen/gap_10_s" />
+
+    <TextView
+        android:text="@string/commodity_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/robot_goodsNum_tv"
+        android:layout_marginBottom="@dimen/gap_20_s" />
+
+    <Button
+        android:text="@string/initiate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/robot_initiate_btn"
+        android:layout_marginBottom="@dimen/gap_20_s" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/participate_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/send_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/robot_send_btn"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:id="@+id/robot_log_et"
+        android:hint="log"
+        android:gravity="top"
+        android:textIsSelectable="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay" />
+</LinearLayout>

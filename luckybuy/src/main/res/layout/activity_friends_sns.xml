@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/haoyougerenzhongxin_bg"
+        android:paddingTop="@dimen/gap_15_s"
+        android:paddingBottom="@dimen/gap_15_s">
+
+        <ImageView
+            android:layout_width="@dimen/view_90_s"
+            android:layout_height="@dimen/view_90_s"
+            android:id="@+id/sns_friends_avatar_iv"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/haoyougerenzhongxin_headportrait"
+            android:padding="@dimen/gap_13_s"
+            android:src="@mipmap/gerentouxiang_moren" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                       "
+            android:id="@+id/sns_friends_nickname"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/gap_3_s"
+            android:textSize="@dimen/text_16_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_id"
+            android:id="@+id/sns_friends_id"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/gap_11_s"
+            android:textSize="@dimen/text_12_s" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tabs_viewpager_base"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

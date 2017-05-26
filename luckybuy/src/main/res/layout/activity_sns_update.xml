@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luckybuy.MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nickname_update_ll"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/nickname_update_et"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:background="@null"
+                android:paddingLeft="@dimen/gap_15_s"
+                android:textSize="@dimen/text_15_s"
+                android:textColor="@color/text_3_c"
+                android:layout_toLeftOf="@+id/nickname_clear_iv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nickname_clear_iv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:src="@mipmap/nav_entercancel_icon"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/gap_15_s" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname_rule"
+            android:id="@+id/textView11"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_11_s"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingTop="@dimen/gap_10_s"
+            android:paddingBottom="@dimen/gap_10_s"
+            android:paddingRight="@dimen/gap_15_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/phone_update_ll"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_new_phone"
+            android:id="@+id/textView35"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s"
+            android:paddingTop="@dimen/gap_13_s"
+            android:paddingBottom="@dimen/gap_13_s"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:id="@+id/phone_update_et"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:background="@null"
+                android:textSize="@dimen/text_15_s"
+                android:textColor="@color/text_3_c"
+                android:layout_toRightOf="@+id/textView36"
+                android:maxLength="11"
+                android:digits="0123456789"
+                android:layout_toLeftOf="@+id/phone_clear_iv"
+                android:inputType="phone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_clear_iv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:src="@mipmap/nav_entercancel_icon"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/gap_15_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/address_hint_phone"
+                android:id="@+id/textView36"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:textColor="@color/text_3_c"
+                android:paddingLeft="@dimen/gap_15_s"
+                android:paddingRight="@dimen/gap_15_s" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/gap_15_s"
+            android:paddingRight="@dimen/gap_15_s">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sms_verify_code_et"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:hint="@string/sms_verify_code_hint"
+                android:textColorHint="@color/hint_c"
+                android:textSize="@dimen/text_15_s"
+                android:maxLength="6"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:layout_toLeftOf="@+id/sms_veify_code_btn" />
+
+            <TextView
+                android:layout_width="@dimen/view_80_s"
+                android:layout_height="@dimen/view_30_s"
+                android:text="@string/verify_code"
+                android:id="@+id/sms_veify_code_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:background="@drawable/background_button_red"
+                android:textColor="@color/light_red"
+                android:gravity="center"
+                android:textSize="@dimen/text_13_s"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

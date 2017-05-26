@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    android:id="@+id/info_detail_ll">
+
+    <TextView
+        android:text="@string/charge_pause_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_detail_title"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_16_s"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/view_30_s"
+        android:paddingBottom="@dimen/gap_17_dp"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_detail_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/text_9_c"
+        android:minHeight="250dp" />
+</LinearLayout>

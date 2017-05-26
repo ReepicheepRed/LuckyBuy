@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gap_15_s"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:id="@+id/cart_list_item_rl">
+
+    <ImageView
+        android:layout_width="@dimen/view_70_s"
+        android:layout_height="@dimen/view_111_s"
+        android:id="@+id/cart_award_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="false"
+        android:src="@mipmap/award_default_120"
+        android:paddingTop="@dimen/gap_25_s"
+        android:paddingBottom="@dimen/gap_25_s"
+        android:paddingRight="@dimen/gap_10_s"
+        android:layout_toRightOf="@+id/cart_cb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/award_name"
+        android:id="@+id/cart_award_name_tv"
+        android:layout_alignTop="@+id/cart_award_iv"
+        android:layout_toRightOf="@+id/cart_award_iv"
+        android:layout_toEndOf="@+id/cart_award_iv"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="@dimen/gap_25_s"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_surplus"
+        android:id="@+id/cart_total_tv"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_9_c"
+        android:layout_toRightOf="@+id/cart_award_iv"
+        android:layout_toEndOf="@+id/cart_award_iv"
+        android:paddingBottom="@dimen/gap_10_s"
+        android:layout_above="@+id/linearLayout2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/participate_number"
+        android:id="@+id/textView20"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_12_s"
+        android:layout_toRightOf="@+id/cart_award_iv"
+        android:layout_toEndOf="@+id/cart_award_iv"
+        android:layout_above="@+id/win_prob_tv" />
+
+    <CheckBox
+        android:layout_width="@dimen/cart_cb_s"
+        android:layout_height="@dimen/cart_cb_s"
+        android:id="@+id/cart_cb"
+        android:checked="false"
+        android:background="@drawable/background_cart_checkbox"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/win_probability"
+        android:id="@+id/win_prob_tv"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@color/text_9_c"
+        android:layout_alignBottom="@+id/cart_award_iv"
+        android:layout_toRightOf="@+id/cart_award_iv"
+        android:layout_toEndOf="@+id/cart_award_iv"
+        android:paddingBottom="@dimen/gap_10_s"
+        android:paddingTop="@dimen/gap_5_s" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_10_s"
+        android:id="@+id/linearLayout2"
+        android:layout_alignBottom="@+id/win_prob_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_minus_ib"
+            android:src="@mipmap/_jianhao"
+            android:background="@null" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/cart_single_num"
+            android:background="@mipmap/_zhongjianhengxian"
+            android:gravity="center"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@android:color/black"
+            android:inputType="number"
+            android:singleLine="true"
+            android:digits="0123456789"
+            android:maxLength="6" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_plus_ib"
+            android:src="@mipmap/_jiahao"
+            android:background="@null" />
+
+    </LinearLayout>
+
+</RelativeLayout>

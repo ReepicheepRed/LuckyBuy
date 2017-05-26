@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="BANNER_SUCCESS"/>
+    <item type="id" name="BANNER_FAIL"/>
+
+    <item type="id" name="BULLETIN_SUCCESS"/>
+    <item type="id" name="AWARD_SUCCESS"/>
+
+    <item type="id" name="AWARDS_HOT"/>
+    <item type="id" name="AWARDS_LATEST"/>
+
+    <item type="id" name="DETAIL_HEADER"/>
+    <item type="id" name="DETAIL_UNVEIL"/>
+
+    <item type="id" name="DETAIL_STATE"/>
+    <item type="id" name="DETAIL_HISTORY"/>
+
+    <item type="id" name="HOT_WORD"/>
+    <item type="id" name="SEARCH"/>
+
+    <item type="id" name="SETTLEMENT_SUCCESS"/>
+
+    <item type="id" name="RECOMMEND_SUCCESS"/>
+
+    <item type="id" name="FRIENDS"/>
+    <item type="id" name="DISCOVER"/>
+</resources>

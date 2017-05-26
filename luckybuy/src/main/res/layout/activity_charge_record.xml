@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/charge_record_ll">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_39_s"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/charge_time"
+            android:id="@+id/textView37"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/charge_figure"
+            android:id="@+id/textView38"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/charge_state"
+            android:id="@+id/textView39"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@mipmap/list_dotted_line"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/charge_record_lv"
+        android:layout_gravity="center_horizontal"
+        android:divider="@mipmap/list_dotted_line"
+        android:dividerHeight="@dimen/divider_h_s"
+        android:background="@mipmap/recharge_record_bg"
+        android:layout_marginLeft="@dimen/gap_5_s"
+        android:layout_marginRight="@dimen/gap_5_s" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/blank_charge" />
+</LinearLayout>

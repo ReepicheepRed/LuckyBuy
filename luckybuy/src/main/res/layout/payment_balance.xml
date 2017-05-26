@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:paddingRight="@dimen/gap_15_s"
+    android:background="@android:color/white"
+    android:id="@+id/balance_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/zhanghuyue_icon"
+        android:paddingRight="@dimen/gap_10_s"
+        android:paddingTop="@dimen/gap_3_s"
+        android:paddingBottom="@dimen/gap_3_s"
+        android:visibility="gone" />
+
+
+
+    <CheckBox
+        android:layout_width="@dimen/gap_18_s"
+        android:layout_height="@dimen/gap_18_s"
+        android:id="@+id/pay_cb_0"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:button="@null"
+        android:checked="false"
+        android:background="@drawable/background_payment_checkbox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_money_value2"
+        android:id="@+id/pay_balance_tv"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pay_cb_0"
+        android:layout_toStartOf="@+id/pay_cb_0"
+        android:paddingRight="@dimen/gap_10_s"
+        android:textSize="@dimen/text_15_s"
+        android:textColor="@color/light_red" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"
+        android:layout_below="@+id/balance_ll"
+        android:layout_marginTop="@dimen/gap_3_s" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/balance_ll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_balance"
+            android:id="@+id/textView10"
+            android:textSize="@dimen/text_14_s"
+            android:textColor="@color/text_3_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_balance"
+            android:id="@+id/avail_balance_tv"
+            android:textSize="@dimen/text_11_s"
+            android:textColor="@color/text_6_c"
+            android:paddingTop="@dimen/gap_3_s" />
+
+    </LinearLayout>
+</RelativeLayout>

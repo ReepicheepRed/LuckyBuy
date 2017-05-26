@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adjust.sdk.test" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="24" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.adjust.sdk.test"
+        android:targetPackage="com.adjust.sdk.test" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+</manifest>

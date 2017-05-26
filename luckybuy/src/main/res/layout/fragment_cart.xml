@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/navigation_bar_height_s">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        android:id="@+id/title_cart_rl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nav_cart"
+            android:id="@+id/title_cart"
+            android:gravity="center"
+            android:textSize="@dimen/title_s"
+            android:background="@color/bg_f9_c"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_3_c" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:id="@+id/cart_edit_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_6_c"
+            android:textSize="@dimen/text_14_s"
+            android:background="@null"
+            android:paddingRight="@dimen/gap_15_s"
+            android:paddingLeft="@dimen/gap_15_s" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/cart_commodity"
+        android:layout_gravity="center_vertical" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/cart_no_commodity"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

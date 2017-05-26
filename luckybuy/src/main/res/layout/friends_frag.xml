@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_friends_list2"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friends_list"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/gap_10_s"/>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper_friends"
+        android:background="@android:color/white">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/friends_login_frag"
+            android:layout_gravity="center_horizontal" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/friends_no_one"
+            android:layout_gravity="center_horizontal" />
+
+   </ViewFlipper>
+</LinearLayout>

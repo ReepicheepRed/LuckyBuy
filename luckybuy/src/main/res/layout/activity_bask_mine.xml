@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c"
+    android:id="@+id/mine_bask_ll">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height_s"
+        layout="@layout/actionbar_base"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_32_s"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_yellow"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/bask_tip"
+            android:id="@+id/textView49"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/text_11_s"
+            android:textColor="@color/dark_yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/bask_rule"
+            android:id="@+id/bask_rule_tv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text_11_s"
+            android:textColor="@color/light_blue"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bask_mine_lv"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="@dimen/gap_10_s"
+        android:divider="@color/ground_c"
+        android:background="@android:color/white" />
+</LinearLayout>

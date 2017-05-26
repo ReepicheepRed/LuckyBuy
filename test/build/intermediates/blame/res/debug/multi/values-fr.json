@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\Android\\AndroidProjects\\LuckyBuy\\LuckyBuy\\test\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 287,
+                    "endOffset": 388
+                },
+                "from": {
+                    "file": "C:\\Users\\zhiPeng.S\\.android\\build-cache\\287cbe5afa6e5d74f53f3cda4ef1cae88179c61c\\output\\res\\values-fr\\common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 291,
+                        "endOffset": 457
+                    }
+                }
+            }
+        ]
+    }
+]

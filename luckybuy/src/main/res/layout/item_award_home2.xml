@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/background_selector_award_gv"
+    android:paddingLeft="@dimen/gap_10_s"
+    android:id="@+id/award_item_rl"
+    android:paddingRight="@dimen/gap_10_s"
+    android:paddingBottom="@dimen/gap_14_s"
+    android:gravity="center"
+    android:paddingTop="@dimen/gap_25_s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lottery"
+        android:id="@+id/total_tv2"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_9_c"
+        android:layout_below="@+id/home_award_iv2"
+        android:layout_alignLeft="@+id/award_name_tv2"
+        android:layout_alignStart="@+id/award_name_tv2"
+        android:layout_marginTop="@dimen/gap_50_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/award_name"
+        android:id="@+id/award_name_tv2"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="@dimen/gap_15_s"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/home_award_iv2" />
+
+    <ImageView
+        android:layout_width="@dimen/view_128_dp"
+        android:layout_height="@dimen/view_128_dp"
+        android:id="@+id/home_award_iv2"
+        android:src="@mipmap/award_default"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="@dimen/view_65_s"
+        android:layout_height="@dimen/gap_27_s"
+        android:text="@string/Now_Participate_2"
+        android:id="@+id/home_add_list_btn2"
+        android:background="@mipmap/jiaruqingdan_btn"
+        android:textSize="@dimen/text_13_s"
+        android:textColor="@color/light_red"
+        android:layout_toRightOf="@+id/current_pb2"
+        android:layout_alignBottom="@+id/current_pb2"
+        android:maxLines="1"/>
+
+    <ProgressBar
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar_color"
+        android:progress="80"
+        android:layout_width="@dimen/view_95_dp"
+        android:layout_height="@dimen/gap_10_s"
+        android:id="@+id/current_pb2"
+        android:layout_below="@+id/total_tv2"
+        android:layout_alignLeft="@+id/total_tv2"
+        android:layout_alignStart="@+id/total_tv2"
+        android:paddingTop="@dimen/gap_5_s"
+        android:layout_marginRight="@dimen/gap_10_s" />
+</RelativeLayout>

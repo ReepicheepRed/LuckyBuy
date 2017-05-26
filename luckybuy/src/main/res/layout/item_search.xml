@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/charge_certificating"
+    android:id="@+id/recommend_tv"
+    android:gravity="center"
+    android:textColor="@color/text_6_c"
+    android:textSize="@dimen/text_13_s"
+    android:background="@drawable/background_white_17"
+    android:padding="@dimen/gap_10_s" />

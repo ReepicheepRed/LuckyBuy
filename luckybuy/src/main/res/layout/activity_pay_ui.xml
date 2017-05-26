@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2DD1E2" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Game"
+            android:background="@null"
+            android:textColor="@android:color/white"
+            android:onClick="backto" />
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="BluePay"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bluepay_refresh"
+            android:onClick="complete"
+            android:textSize="15sp"
+             />
+
+    </RelativeLayout>
+	<FrameLayout 
+	    android:layout_gravity="center"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_error"/>
+  	  <WebView
+        android:id="@+id/wb_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

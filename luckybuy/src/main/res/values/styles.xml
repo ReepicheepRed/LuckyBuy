@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--设置-全屏-->
+    <style name="NoTitleFullscreen" parent="Theme.AppCompat.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme_LB" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 选择照片底部弹出层 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">@color/light_red</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/light_red</item>
+    </style>
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_10_s</item>
+        <item name="android:textColor">@color/text_4_c</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="FriendsSNSTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">@color/light_red</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">25dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabTextAppearance">@style/FriendsSNSTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/light_red</item>
+    </style>
+    <style name="FriendsSNSTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_14_s</item>
+        <item name="android:textColor">@color/text_3_c</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance_LB_small" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_13_s</item>
+        <item name="android:textColor">@color/light_red</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="CheckBox_LB" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/background_cart_checkbox</item>
+        <item name="android:paddingLeft">9.0dip</item>
+        <item name="android:maxHeight">20.0dip</item>
+    </style>
+
+    <style name="TextAppearanc_CountDown">
+        <item name="android:textSize">@dimen/text_16_s</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearanc_LuckyID">
+        <item name="android:textSize">@dimen/text_15_s</item>
+        <item name="android:textColor">@color/dark_m_yellow</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

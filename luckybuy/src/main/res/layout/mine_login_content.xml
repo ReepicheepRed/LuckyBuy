@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView2"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/ground_c">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ground_c"
+    android:id="@+id/mine_login_ll"
+    android:paddingBottom="@dimen/navigation_bar_height_s">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:paddingRight="@dimen/gap_15_s"
+        android:id="@+id/mine_address_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:id="@+id/imageView_34"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/dizhi_icon"
+            android:paddingTop="@dimen/gap_11_s"
+            android:paddingBottom="@dimen/gap_11_s"
+            android:paddingRight="@dimen/gap_15_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sns_address"
+            android:id="@+id/textView30"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_34"
+            android:layout_toEndOf="@+id/imageView_34"
+            android:textColor="@color/text_3_c"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_15_s" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView29"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/enter_arrow_icon_2x" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

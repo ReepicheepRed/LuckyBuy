@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="@dimen/view_65_s"
+        android:layout_height="@dimen/view_65_s"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/add_pictures_btn_2x"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginTop="@dimen/gap_10_s">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView38"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/add_pictures_icon_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_picture"
+            android:id="@+id/textView50"
+            android:textSize="@dimen/text_10_s"
+            android:textColor="@color/text_9_c"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView38"
+            android:paddingTop="2dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bask_picture_iv" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/gap_25_s"
+        android:layout_height="@dimen/gap_25_s"
+        android:id="@+id/delete_picture_iv"
+        android:src="@mipmap/photos_delete_icon_2x"
+        android:layout_toRightOf="@+id/relativeLayout2"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_marginLeft="-11dp"
+        android:layout_marginBottom="-18dp"
+        android:paddingTop="@dimen/gap_6_s" />
+</RelativeLayout>

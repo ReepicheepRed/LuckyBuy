@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground_c">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        layout="@layout/actionbar_base" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us"
+        android:id="@+id/textView64"
+        android:textColor="@color/text_8e_c"
+        android:textSize="@dimen/text_13_s"
+        android:paddingTop="@dimen/gap_23_dp"
+        android:paddingLeft="@dimen/gap_35_dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_63_s"
+        android:paddingTop="@dimen/gap_20_s"
+        android:id="@+id/call_center_email_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView13"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/youxiang_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="luckybuy@deedeefun.com"
+            android:id="@+id/email_account_tv"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_12_s"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_63_s"
+        android:paddingTop="@dimen/gap_20_s"
+        android:id="@+id/call_center_facebook_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView15"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/facebook_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook:luckybuythai"
+            android:id="@+id/facebook_account_tv"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_12_s"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_63_s"
+        android:paddingTop="@dimen/gap_20_s"
+        android:id="@+id/call_center_line_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView16"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/line_icon_call_center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/line_account"
+            android:id="@+id/line_account_tv"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_12_s"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40_dp"
+        android:paddingLeft="@dimen/gap_19_s"
+        android:paddingRight="@dimen/gap_19_s"
+        android:layout_marginTop="@dimen/gap_55_s">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/faq"
+            android:id="@+id/call_center_faq_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/gap_17_dp"
+            android:background="@drawable/background_button_red_transparent"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/email_us"
+            android:id="@+id/call_center_email_us_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/background_button_red_transparent"
+            android:textColor="@color/light_red" />
+    </LinearLayout>
+</LinearLayout>

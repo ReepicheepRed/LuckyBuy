@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="@dimen/gap_15_s"
+    android:paddingLeft="@dimen/gap_15_s">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_73_dp"
+        android:id="@+id/friends_avatar_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/haoyouliebiaotouxiang"
+        android:paddingTop="@dimen/gap_12_s"
+        android:paddingBottom="@dimen/gap_12_s"
+        android:paddingRight="@dimen/gap_10_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_username"
+        android:id="@+id/friends_nickname_tv"
+        android:layout_alignTop="@+id/friends_avatar_iv"
+        android:layout_toRightOf="@+id/friends_avatar_iv"
+        android:layout_toEndOf="@+id/friends_avatar_iv"
+        android:paddingTop="@dimen/gap_18_s"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friends_id"
+        android:id="@+id/friends_id_tv"
+        android:layout_below="@+id/friends_nickname_tv"
+        android:layout_toRightOf="@+id/friends_avatar_iv"
+        android:layout_toEndOf="@+id/friends_avatar_iv"
+        android:paddingTop="@dimen/gap_10_s"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_9_c"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/robbing_award"
+        android:id="@+id/friends_state_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:paddingRight="@dimen/gap_15_s"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/text_13_s"
+        android:layout_toLeftOf="@+id/imageView44" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView43"
+        android:layout_below="@+id/friends_nickname_tv"
+        android:layout_toRightOf="@+id/friends_avatar_iv"
+        android:layout_toEndOf="@+id/friends_avatar_iv"
+        android:src="@mipmap/zuanshi_icon"
+        android:layout_marginTop="@dimen/gap_10_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diamond_count"
+        android:id="@+id/friends_diamond_tv"
+        android:layout_alignBottom="@+id/imageView43"
+        android:layout_toRightOf="@+id/imageView43"
+        android:layout_toEndOf="@+id/imageView43"
+        android:textColor="@color/text_6_c"
+        android:textSize="@dimen/text_12_s"
+        android:paddingLeft="@dimen/gap_3_s" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView44"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/enter_arrow_icon_2x"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

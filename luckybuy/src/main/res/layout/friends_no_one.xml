@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/gap_77_s"
+    android:paddingBottom="@dimen/gap_77_s"
+    android:id="@+id/friends_no_one_ll">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invite_friends_picture"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/no_friends_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friends_no"
+        android:id="@+id/invite_friends_tip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_15_s"
+        android:layout_marginTop="@dimen/gap_25_s"
+        android:layout_marginBottom="@dimen/gap_21_s"
+        android:textColor="@color/text_3_c"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/invite_friends_btn"
+        android:gravity="center"
+        android:id="@+id/invite_friends_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView9"
+            android:src="@mipmap/invite_friends_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite_friends"
+            android:id="@+id/textView6"
+            android:layout_toRightOf="@+id/imageView9"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_15_s"
+            android:layout_marginLeft="@dimen/gap_6_s" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/gap_15_s"
+    tools:context="com.luckybuy.MainActivity"
+    android:id="@+id/payment_type_ll">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/field_height_primary_s"
+    android:layout_gravity="center_horizontal"
+    android:paddingRight="@dimen/gap_43_dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surplus_to_pay"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_15_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_money_value"
+        android:id="@+id/payment_money_value_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_15_s"
+        android:textColor="@color/light_red" />
+
+</RelativeLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/divider_h_s"
+    android:background="@color/divider_c" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/field_height_primary_s"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/visa_rl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7_tp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/visa_icon"
+        android:layout_marginRight="@dimen/gap_10_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visa"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView7_tp"
+        android:layout_toEndOf="@+id/imageView7_tp"
+        android:textColor="@color/text_3_c"
+        android:textSize="@dimen/text_13_s" />
+
+    <CheckBox
+        android:layout_width="@dimen/gap_18_s"
+        android:layout_height="@dimen/gap_18_s"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:background="@drawable/background_cart_checkbox"
+        android:button="@null"
+        android:layout_marginRight="@dimen/gap_15_s"
+        android:id="@+id/pay_cb_1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView7_tp" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/paypal_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/paypal_icon"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paypal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView8_tp"
+            android:layout_toEndOf="@+id/imageView8_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView8_tp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/line_pay_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView9_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/line_icon"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/line_pay"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView9_tp"
+            android:layout_toEndOf="@+id/imageView9_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_3" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView9_tp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/true_money_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/true_icon"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_money"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2_tp"
+            android:layout_toEndOf="@+id/imageView2_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_4" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView2_tp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:id="@+id/payment_type_more_ll">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mol_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/mol_icon"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mol"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1_tp"
+            android:layout_toEndOf="@+id/imageView1_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_5" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView1_tp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bluepay_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/bluepay_icon"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_pay"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3_tp"
+            android:layout_toEndOf="@+id/imageView3_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_6" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView3_tp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height_primary_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/alipay_rl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6_tp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/alipay_logo"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_alipay"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView6_tp"
+            android:layout_toEndOf="@+id/imageView6_tp"
+            android:textColor="@color/text_3_c"
+            android:textSize="@dimen/text_13_s" />
+
+        <CheckBox
+            android:layout_width="@dimen/gap_18_s"
+            android:layout_height="@dimen/gap_18_s"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:background="@drawable/background_cart_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/gap_15_s"
+            android:id="@+id/pay_cb_7" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:background="@color/divider_c"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageView6_tp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height_primary_s"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/paysbuy_rl" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView45"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/paytype_icon"
+                android:layout_marginRight="@dimen/gap_10_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paysbuy_pay"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView45"
+                android:layout_toEndOf="@+id/imageView45"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_13_s" />
+
+            <CheckBox
+                android:layout_width="@dimen/gap_18_s"
+                android:layout_height="@dimen/gap_18_s"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:checked="false"
+                android:background="@drawable/background_cart_checkbox"
+                android:button="@null"
+                android:layout_marginRight="@dimen/gap_15_s"
+                android:id="@+id/pay_cb_8" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_45_s"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/payment_other_rl"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/payment_other"
+        android:id="@+id/textView59"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@color/text_6_c"
+        android:paddingRight="4dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView39"
+        android:layout_toRightOf="@+id/textView59"
+        android:layout_toEndOf="@+id/textView59"
+        android:src="@mipmap/qitazhifufangshi_arrow"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+
+
+
+</LinearLayout>

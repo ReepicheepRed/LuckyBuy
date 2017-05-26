@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+   >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bulletin_height_s"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/gap_15_s"
+        android:background="@android:color/white"
+        android:paddingRight="@dimen/gap_15_s">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:src="@mipmap/notification_icon"
+            android:paddingRight="@dimen/gap_8_s" />
+
+        <com.luckybuy.layout.BulletinView
+            android:id="@+id/bulletin_bv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:animDuration="900"
+            app:gap="2000"/>
+    </LinearLayout>
+</RelativeLayout>

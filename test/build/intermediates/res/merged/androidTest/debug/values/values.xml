@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust">
+            <enum name="none" value="0"/>
+            <enum name="adjust_width" value="1"/>
+            <enum name="adjust_height" value="2"/>
+        </attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <integer name="google_play_services_version">8487000</integer>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Test</string>
+    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
+    <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

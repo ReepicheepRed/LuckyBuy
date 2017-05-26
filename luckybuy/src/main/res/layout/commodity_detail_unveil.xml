@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_136_s"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/_zhongjiangxiangqing_bg"
+    android:padding="@dimen/gap_10_s"
+    android:id="@+id/detail_unveil_rl"
+    tools:context="com.luckybuy.MainActivity"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="@dimen/gap_37_s"
+        android:layout_height="@dimen/gap_37_s"
+        android:id="@+id/detail_unveil_user_head_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/gap_10_s"
+        android:padding="2dp"
+        android:background="@mipmap/_jiazai_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winner"
+        android:id="@+id/winner_tv"
+        android:layout_alignTop="@+id/detail_unveil_user_head_iv"
+        android:layout_toRightOf="@+id/detail_unveil_user_head_iv"
+        android:layout_toEndOf="@+id/detail_unveil_user_head_iv"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_unveil_userId"
+        android:id="@+id/detail_unveil_userId_tv"
+        android:layout_below="@+id/winner_tv"
+        android:layout_toRightOf="@+id/detail_unveil_user_head_iv"
+        android:layout_toEndOf="@+id/detail_unveil_user_head_iv"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@android:color/white"
+        android:paddingTop="@dimen/gap_5_s"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/issue"
+        android:id="@+id/detail_unveil_issue_tv"
+        android:layout_below="@+id/detail_unveil_userId_tv"
+        android:layout_toRightOf="@+id/detail_unveil_user_head_iv"
+        android:layout_toEndOf="@+id/detail_unveil_user_head_iv"
+        android:paddingTop="@dimen/gap_5_s"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@color/text_9_c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_unveil_part_count_tv"
+        android:layout_below="@+id/detail_unveil_issue_tv"
+        android:layout_alignLeft="@+id/detail_unveil_issue_tv"
+        android:layout_alignStart="@+id/detail_unveil_issue_tv"
+        android:text="@string/detail_unveil_part_count"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s"
+        android:paddingTop="@dimen/gap_5_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_unveil_time_tv"
+        android:layout_below="@+id/detail_unveil_part_count_tv"
+        android:layout_alignLeft="@+id/detail_unveil_part_count_tv"
+        android:layout_alignStart="@+id/detail_unveil_part_count_tv"
+        android:text="@string/detail_unveil_time"
+        android:paddingTop="@dimen/gap_5_s"
+        android:textColor="@color/text_9_c"
+        android:textSize="@dimen/text_11_s" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lucky_number"
+        android:id="@+id/lucky_number_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_11_s"
+        android:textColor="@android:color/white"
+        android:paddingTop="@dimen/gap_3_s"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/gap_3_s" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gap_22_s"
+        android:text="@string/caculate_detail"
+        android:id="@+id/detail_unveil_caculate_btn"
+        android:layout_alignBottom="@+id/lucky_number_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/zhongjiangxiangqing_btn"
+        android:textSize="@dimen/text_12_s"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

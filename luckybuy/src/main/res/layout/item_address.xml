@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/gap_16_s"
+        android:paddingBottom="@dimen/gap_16_s">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_user_name"
+            android:id="@+id/address_user_name_tv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:id="@+id/phone_number_tv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text_15_s"
+            android:textColor="@color/text_3_c"
+            android:paddingRight="@dimen/gap_15_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_address"
+            android:id="@+id/user_address_tv"
+            android:layout_below="@+id/address_user_name_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_13_s"
+            android:paddingTop="@dimen/gap_12_s" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_38_s"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/set_default_address"
+            android:id="@+id/set_default_address_cb"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:button="@drawable/background_cart_checkbox"
+            android:checked="true"
+            android:paddingLeft="@dimen/gap_12_s"
+            android:textSize="@dimen/text_13_s"
+            android:textColor="@color/text_6_c" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/address_delete_ll"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView35"
+                android:src="@mipmap/delete_icon"
+                android:paddingRight="@dimen/gap_5_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/delete"
+                android:id="@+id/textView40"
+                android:paddingRight="@dimen/gap_15_s"
+                android:textSize="@dimen/text_13_s"
+                android:textColor="@color/text_6_c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/address_delete_ll"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/gap_13_s"
+            android:id="@+id/address_edit_ll"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView36"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/edit_icon"
+                android:paddingRight="@dimen/gap_5_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/edit"
+                android:id="@+id/textView41"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_6_c"
+                android:textSize="@dimen/text_13_s" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

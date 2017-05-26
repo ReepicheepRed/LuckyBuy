@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_transparent"
+    android:gravity="center">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="260dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center_horizontal"
+		android:background="@drawable/background_alertdialog">
+
+        <TextView
+            android:id="@+id/alertDialog_title_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gap_23_dp"
+            android:textSize="@dimen/text_16_s"
+            android:textColor="@color/title_c"
+            android:text="@string/alertDialog_title"/>
+        
+        <TextView
+            android:id="@+id/alertDialog_subTitle_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alertDialog_title_single"
+            android:layout_marginTop="@dimen/gap_5_s"
+            android:textSize="14sp"
+            android:textColor="@color/title_c"
+            android:text="@string/alertDialog_subtitle" />
+
+        <View
+            android:id="@+id/horizon_divider"            
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_h_s"
+            android:layout_above="@+id/alertDialog_know_btn"
+            android:background="@color/divider_c"/>
+
+
+        <Button
+            android:id="@+id/alertDialog_know_btn"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/gap_16_s"
+            android:textColor="@color/title_c"
+            android:text="@string/confirm"
+            android:background="@null"/>
+
+    </RelativeLayout>
+</RelativeLayout>

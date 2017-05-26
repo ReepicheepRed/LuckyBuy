@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/gap_15_s"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="@dimen/gap_15_s">
+
+        <ImageView
+            android:layout_width="@dimen/view_60_s"
+            android:layout_height="@dimen/view_100_s"
+            android:id="@+id/fsns_award_iv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/award_default_120"
+            android:paddingTop="@dimen/gap_20_s"
+            android:paddingBottom="@dimen/gap_20_s"
+            android:layout_marginRight="@dimen/gap_10_s" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/fsns_award_iv">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/award_name"
+                android:id="@+id/fsns_award_title_tv"
+                android:maxLines="2"
+                android:lineSpacingExtra="@dimen/gap_5_s"
+                android:textColor="@color/text_3_c"
+                android:textSize="@dimen/text_14_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/issue"
+                android:id="@+id/fsns_award_issue_tv"
+                android:paddingTop="@dimen/gap_10_s"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/text_9_c"
+                android:layout_below="@+id/fsns_award_title_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_unveil_part_count"
+                android:id="@+id/fsns_person_count_tv"
+                android:paddingTop="@dimen/gap_10_s"
+                android:textColor="@color/text_9_c"
+                android:textSize="@dimen/text_12_s"
+                android:layout_below="@+id/fsns_award_issue_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_detail"
+                android:id="@+id/fsns_check_detail_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/fsns_person_count_tv"
+                android:textSize="@dimen/text_12_s"
+                android:textColor="@color/light_blue" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lucky_tag"
+            android:src="@mipmap/xingyun_icon_2x"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-6dp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_h_s"
+        android:background="@color/divider_c"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_54_s"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="@dimen/gap_15_s"
+        android:id="@+id/fsns_going_rl"
+        android:visibility="gone"
+        tools:visibility = "visible">
+
+        <TextView
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/view_75_s"
+            android:layout_height="@dimen/view_29_s"
+            android:text="@string/gobuy"
+            android:id="@+id/fsns_gobuy_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/buynow_btn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_15_s"
+            android:layout_marginLeft="@dimen/gap_20_s"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_12_s"
+            android:id="@+id/fsns_pb"
+            android:layout_alignBottom="@+id/fsns_gobuy_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/fsns_gobuy_btn"
+            android:layout_toStartOf="@+id/fsns_gobuy_btn"
+            android:progressDrawable="@drawable/progressbar_color"
+            android:progress="80"
+            android:paddingTop="@dimen/gap_6_s"
+            android:indeterminate="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_demand"
+            android:id="@+id/fsns_demand_tv"
+            android:layout_above="@+id/fsns_pb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/text_11_s"
+            android:textColor="@color/text_9_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surplus"
+            android:id="@+id/fsns_surplus_tv"
+            android:layout_alignBottom="@+id/fsns_demand_tv"
+            android:layout_toLeftOf="@+id/fsns_gobuy_btn"
+            android:layout_toStartOf="@+id/fsns_gobuy_btn"
+            android:textColor="@color/text_9_c"
+            android:textSize="@dimen/text_11_s" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_54_s"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="@dimen/text_15_s"
+        android:id="@+id/fsns_unveiled_rl"
+        android:visibility="gone"
+        tools:visibility = "visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_winner"
+            android:id="@+id/fsns_winner_tv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/fsns_buy_btn"
+            android:paddingRight="@dimen/gap_25_s"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_9_c" />
+
+        <TextView
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/view_75_s"
+            android:layout_height="@dimen/view_29_s"
+            android:text="@string/buy"
+            android:id="@+id/fsns_buy_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/buy_btn"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/text_15_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count_friends"
+            android:id="@+id/fsns_buycount_tv"
+            android:layout_toLeftOf="@+id/fsns_buy_btn"
+            android:layout_toStartOf="@+id/fsns_buy_btn"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/gap_25_s"
+            android:textColor="@color/text_9_c" />
+    </RelativeLayout>
+</LinearLayout>

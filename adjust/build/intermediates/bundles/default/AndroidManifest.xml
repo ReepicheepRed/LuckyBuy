@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adjust.sdk"
+    android:versionCode="1"
+    android:versionName="4.10.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application />
+
+</manifest>
